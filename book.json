@@ -66,9 +66,9 @@
             "token": "168b82023dba250941cd279b9b1123d0"
         },
         "donate": {
-            "wechat": "./assets/wechat-pay.png",
-            "alipay": "./assets/alipay.png",
-            "title": "",
+            "wechat": "../assets/wechat-pay.png",
+            "alipay": "../assets/alipay.png",
+            "title": "一分钱也是❤️",
             "button": "赏",
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
