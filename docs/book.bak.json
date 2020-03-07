@@ -9,7 +9,7 @@
     ],
     "pluginsConfig": {
         "theme-default": {
-            "showLevel": true
+            "showLevel": true // 目录的数字显示设置
         },
         "fontSettings": {
             "family": "serif",
@@ -18,7 +18,7 @@
         "github": {
             "url": "https://github.com/muyids"
         },
-        "autotheme": {
+        "autotheme": { // 自动切换主题设置
             "white": [9, 10, 11, 12, 13, 14, 15, 16, 17],
             "sepia": [6, 7, 8, 18, 19],
             "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5]

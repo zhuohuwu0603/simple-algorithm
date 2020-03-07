@@ -1,0 +1,829 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>图的遍历 · 从头开始学算法</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="木易东水">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-latex-codecogs/latex-codecogs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="拓扑排序.html" />
+    
+    
+    <link rel="prev" href="图.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/muyids" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://muyids.com" target="_blank" class="custom-link">个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../二分.html">
+            
+                <a href="../二分.html">
+            
+                    
+                    二分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../sort/排序.html">
+            
+                <a href="../sort/排序.html">
+            
+                    
+                    排序算法及应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../sort/快排.html">
+            
+                <a href="../sort/快排.html">
+            
+                    
+                    快速排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../sort/归并.html">
+            
+                <a href="../sort/归并.html">
+            
+                    
+                    归并排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../字符串处理.html">
+            
+                <a href="../字符串处理.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../DFS和回溯.html">
+            
+                <a href="../DFS和回溯.html">
+            
+                    
+                    DFS和回溯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../单调栈.html">
+            
+                <a href="../单调栈.html">
+            
+                    
+                    单调栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../滑动窗口.html">
+            
+                <a href="../滑动窗口.html">
+            
+                    
+                    滑动窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../前缀和.html">
+            
+                <a href="../前缀和.html">
+            
+                    
+                    前缀和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../链表.html">
+            
+                <a href="../链表.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../binary-tree/二叉树.html">
+            
+                <a href="../binary-tree/二叉树.html">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../binary-tree/二叉树的遍历.html">
+            
+                <a href="../binary-tree/二叉树的遍历.html">
+            
+                    
+                    二叉树的遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../binary-tree/深度优先--前序遍历.html">
+            
+                <a href="../binary-tree/深度优先--前序遍历.html">
+            
+                    
+                    深度优先--前序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../binary-tree/深度优先--中序遍历.html">
+            
+                <a href="../binary-tree/深度优先--中序遍历.html">
+            
+                    
+                    深度优先--中序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../binary-tree/深度优先--后序遍历.html">
+            
+                <a href="../binary-tree/深度优先--后序遍历.html">
+            
+                    
+                    深度优先--后序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../binary-tree/广度优先遍历.html">
+            
+                <a href="../binary-tree/广度优先遍历.html">
+            
+                    
+                    广度优先遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../binary-tree/二叉搜索树.html">
+            
+                <a href="../binary-tree/二叉搜索树.html">
+            
+                    
+                    二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../greedy/贪心.html">
+            
+                <a href="../greedy/贪心.html">
+            
+                    
+                    贪心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../greedy/区间调度.md">
+            
+                <span>
+            
+                    
+                    区间问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../动态规划.html">
+            
+                <a href="../动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../并查集.html">
+            
+                <a href="../并查集.html">
+            
+                    
+                    并查集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../树状数组.html">
+            
+                <a href="../树状数组.html">
+            
+                    
+                    树状数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../位运算.html">
+            
+                <a href="../位运算.html">
+            
+                    
+                    位运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="图.html">
+            
+                <a href="图.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.16.1" data-path="图的遍历.html">
+            
+                <a href="图的遍历.html">
+            
+                    
+                    图的遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="拓扑排序.html">
+            
+                <a href="拓扑排序.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="朴素的Dijkstra算法.html">
+            
+                <a href="朴素的Dijkstra算法.html">
+            
+                    
+                    朴素的Dijkstra算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="二分图.html">
+            
+                <a href="二分图.html">
+            
+                    
+                    二分图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../math/数论.html">
+            
+                <a href="../math/数论.html">
+            
+                    
+                    数论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../math/抽屉原理.html">
+            
+                <a href="../math/抽屉原理.html">
+            
+                    
+                    抽屉原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >图的遍历</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dfs&#x548C;bfs"><b>1. </b>DFS&#x548C;BFS</a></li><ul><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b>1.1. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><span class="title-icon "></span><a href="#&#x9898;&#x76EE;&#x5217;&#x8868;"><b>1.2. </b>&#x9898;&#x76EE;&#x5217;&#x8868;</a></li><ul><li><span class="title-icon "></span><a href="#flood-fill&#x7B97;&#x6CD5;"><b>1.2.1. </b>flood fill&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#leetcode-733-flood-fill-easy"><b>1.2.2. </b>LeetCode 733. Flood Fill (easy)</a></li><li><span class="title-icon "></span><a href="#leetcode-200-number-of-islands&#xFF08;medium&#xFF09;"><b>1.2.3. </b>LeetCode 200. Number of Islands&#xFF08;medium&#xFF09;</a></li><li><span class="title-icon "></span><a href="#leetcode-111-minimum-depth-of-binary-tree&#xFF08;easy&#xFF09;"><b>1.2.4. </b>LeetCode 111. Minimum Depth of Binary Tree&#xFF08;easy&#xFF09;</a></li><li><span class="title-icon "></span><a href="#leetcode-279-perfect-squares-medium"><b>1.2.5. </b>LeetCode 279. Perfect Squares (medium)</a></li><li><span class="title-icon "></span><a href="#leetcode-130-surrounded-regions-&#xFF08;medium&#xFF09;"><b>1.2.6. </b>LeetCode 130. Surrounded Regions &#xFF08;medium&#xFF09;</a></li><li><span class="title-icon "></span><a href="#leetcode-695-max-area-of-island"><b>1.2.7. </b>LeetCode 695. Max Area of Island</a></li><li><span class="title-icon "></span><a href="#leetcode-886-possible-bipartition&#xFF08;medium&#xFF09;"><b>1.2.8. </b>LeetCode 886. Possible Bipartition&#xFF08;medium&#xFF09;</a></li><li><span class="title-icon "></span><a href="#851-loud-and-rich-medium"><b>1.2.9. </b>851. Loud and Rich (medium)</a></li><li><span class="title-icon "></span><a href="#994-rotting-oranges&#xFF08;easy"><b>1.2.10. </b>994. Rotting Oranges&#xFF08;easy)</a></li><li><span class="title-icon "></span><a href="#leetcode-980-unique-paths-iii-hard"><b>1.2.11. </b>LeetCode 980. Unique Paths III (hard)</a></li><li><span class="title-icon "></span><a href="#leetcode-1254-number-of-closed-islands&#xFF08;medium&#xFF09;"><b>1.2.12. </b>LeetCode 1254. Number of Closed Islands&#xFF08;medium&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;"><b>1.2.13. </b>&#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;</a></li><li><span class="title-icon "></span><a href="#leetcode-207-course-schedule"><b>1.2.14. </b>LeetCode 207. Course Schedule</a></li><li><span class="title-icon "></span><a href="#leetcode-210-course-schedule-ii"><b>1.2.15. </b>LeetCode 210. Course Schedule II</a></li><li><span class="title-icon "></span><a href="#leetcode-802-find-eventual-safe-states-medium"><b>1.2.16. </b>LeetCode 802. Find Eventual Safe States (medium)</a></li></ul></ul></ul></div><a href="#dfs&#x548C;bfs" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dfs&#x548C;bfs"><a name="dfs&#x548C;bfs" class="anchor-navigation-ex-anchor" href="#dfs&#x548C;bfs"><i class="fa fa-link" aria-hidden="true"></i></a>1. DFS&#x548C;BFS</h1>
+<p>DFS&#x548C;BFS&#x5BF9;&#x6BD4;</p>
+<p>BFS</p>
+<ul>
+<li>&#x7A7A;&#x95F4;&#x662F;&#x6307;&#x6570;&#x7EA7;&#x522B;&#x7684;&#xFF0C;&#x5927;</li>
+<li>&#x4E0D;&#x4F1A;&#x6709;&#x7206;&#x6808;&#x98CE;&#x9669;</li>
+<li>&#x53EF;&#x4EE5;&#x6C42;&#x6700;&#x77ED;&#xFF0C;&#x6700;&#x5C0F;</li>
+</ul>
+<p>DFS</p>
+<ul>
+<li>&#x7A7A;&#x95F4;&#x548C;&#x6DF1;&#x5EA6;&#x6210;&#x6B63;&#x6BD4;&#xFF0C;&#x5C0F;&#xFF01;</li>
+<li>&#x6709;&#x7206;&#x6808;&#x7684;&#x98CE;&#x9669;&#xFF0C;&#x6BD4;&#x5982;&#x6DF1;&#x5EA6;&#x6700;&#x574F;&#x53EF;&#x80FD;&#x6709;1e5&#x5C42;&#xFF0C;&#x4F1A;&#x7206;&#x6808;&#xFF08;C++&#x4E00;&#x822C;4M&#xFF09;&#xFF1B;&#x5C42;&#x4FE1;&#x606F;&#x90FD;&#x653E;&#x5728;&#x6808;&#x7A7A;&#x95F4;&#x91CC;</li>
+<li>&#x4E0D;&#x80FD;&#x641C;&#x6700;&#x77ED;&#x3001;&#x6700;&#x5C0F;</li>
+</ul>
+<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<ul>
+<li>&#x5224;&#x65AD;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x3001;&#x5C42;&#x662F;&#x5426;&#x5DF2;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x89E3;</li>
+<li>&#x5224;&#x65AD;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x526A;&#x679D;</li>
+<li>&#x9632;&#x6B62;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x95EE;&#x9898;&#xFF08;&#x6BD4;&#x5982;&#x5B58;&#x5728;&#x73AF;&#x8DEF;&#xFF0C;&#x8981;&#x9000;&#x51FA;&#xFF09;</li>
+<li>&#x904D;&#x5386;&#x987A;&#x5E8F;&#x5982;&#x4F55;&#x9009;&#x62E9;&#xFF08;&#x6BD4;&#x5982;&#x662F;&#x5F27;&#x5934;&#x5230;&#x5F27;&#x5C3E;&#x8FD8;&#x662F;&#x5F27;&#x5C3E;&#x5230;&#x5F27;&#x5934;&#xFF09;</li>
+</ul>
+<h2 id="&#x9898;&#x76EE;&#x5217;&#x8868;"><a name="&#x9898;&#x76EE;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x76EE;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x9898;&#x76EE;&#x5217;&#x8868;</h2>
+<h3 id="flood-fill&#x7B97;&#x6CD5;"><a name="flood-fill&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#flood-fill&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. flood fill&#x7B97;&#x6CD5;</h3>
+<h3 id="leetcode-733-flood-fill-easy"><a name="leetcode-733-flood-fill-easy" class="anchor-navigation-ex-anchor" href="#leetcode-733-flood-fill-easy"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. LeetCode 733. Flood Fill (easy)</h3>
+<p>flood fill&#x7B97;&#x6CD5;, dfs&#x548C;bfs&#x4E24;&#x79CD;&#x5B9E;&#x73B0;</p>
+<h3 id="leetcode-200-number-of-islands&#xFF08;medium&#xFF09;"><a name="leetcode-200-number-of-islands&#xFF08;medium&#xFF09;" class="anchor-navigation-ex-anchor" href="#leetcode-200-number-of-islands&#xFF08;medium&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. LeetCode 200. Number of Islands&#xFF08;medium&#xFF09;</h3>
+<ul>
+<li>flood fill&#x7B97;&#x6CD5;</li>
+<li>&#x5E76;&#x67E5;&#x96C6;</li>
+</ul>
+<hr>
+<h3 id="leetcode-111-minimum-depth-of-binary-tree&#xFF08;easy&#xFF09;"><a name="leetcode-111-minimum-depth-of-binary-tree&#xFF08;easy&#xFF09;" class="anchor-navigation-ex-anchor" href="#leetcode-111-minimum-depth-of-binary-tree&#xFF08;easy&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. LeetCode 111. Minimum Depth of Binary Tree&#xFF08;easy&#xFF09;</h3>
+<h3 id="leetcode-279-perfect-squares-medium"><a name="leetcode-279-perfect-squares-medium" class="anchor-navigation-ex-anchor" href="#leetcode-279-perfect-squares-medium"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. LeetCode 279. Perfect Squares (medium)</h3>
+<h3 id="leetcode-130-surrounded-regions-&#xFF08;medium&#xFF09;"><a name="leetcode-130-surrounded-regions-&#xFF08;medium&#xFF09;" class="anchor-navigation-ex-anchor" href="#leetcode-130-surrounded-regions-&#xFF08;medium&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. LeetCode 130. Surrounded Regions &#xFF08;medium&#xFF09;</h3>
+<p>LeetCode 543. Diameter of Binary Tree</p>
+<p>LeetCode 127. Word Ladder</p>
+<p>LeetCode 542. 01 Matrix</p>
+<h3 id="leetcode-695-max-area-of-island"><a name="leetcode-695-max-area-of-island" class="anchor-navigation-ex-anchor" href="#leetcode-695-max-area-of-island"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. LeetCode 695. Max Area of Island</h3>
+<h3 id="leetcode-886-possible-bipartition&#xFF08;medium&#xFF09;"><a name="leetcode-886-possible-bipartition&#xFF08;medium&#xFF09;" class="anchor-navigation-ex-anchor" href="#leetcode-886-possible-bipartition&#xFF08;medium&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.8. LeetCode 886. Possible Bipartition&#xFF08;medium&#xFF09;</h3>
+<p>&#x4E8C;&#x5206;&#x56FE;&#x5224;&#x5B9A;</p>
+<h3 id="851-loud-and-rich-medium"><a name="851-loud-and-rich-medium" class="anchor-navigation-ex-anchor" href="#851-loud-and-rich-medium"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.9. 851. Loud and Rich (medium)</h3>
+<h3 id="994-rotting-oranges&#xFF08;easy"><a name="994-rotting-oranges&#xFF08;easy" class="anchor-navigation-ex-anchor" href="#994-rotting-oranges&#xFF08;easy"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.10. 994. Rotting Oranges&#xFF08;easy)</h3>
+<h3 id="leetcode-980-unique-paths-iii-hard"><a name="leetcode-980-unique-paths-iii-hard" class="anchor-navigation-ex-anchor" href="#leetcode-980-unique-paths-iii-hard"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.11. LeetCode 980. Unique Paths III (hard)</h3>
+<h3 id="leetcode-1254-number-of-closed-islands&#xFF08;medium&#xFF09;"><a name="leetcode-1254-number-of-closed-islands&#xFF08;medium&#xFF09;" class="anchor-navigation-ex-anchor" href="#leetcode-1254-number-of-closed-islands&#xFF08;medium&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.12. LeetCode 1254. Number of Closed Islands&#xFF08;medium&#xFF09;</h3>
+<hr>
+<h3 id="&#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;"><a name="&#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.13. &#x62D3;&#x6251;&#x6392;&#x5E8F;&#x76F8;&#x5173;</h3>
+<p>&#x62D3;&#x6251;&#x6392;&#x5E8F;&#xFF0C;&#x5C06;AOV&#x7F51;&#x8F6C;&#x5316;&#x6210;&#x7EBF;&#x6027;&#x5E8F;&#x5217;</p>
+<p>&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x56FE;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x73AF; &amp; &#x56FE;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;&#x662F;&#x5426;&#x5728;&#x73AF;&#x91CC;&#xFF1B;</p>
+<h3 id="leetcode-207-course-schedule"><a name="leetcode-207-course-schedule" class="anchor-navigation-ex-anchor" href="#leetcode-207-course-schedule"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.14. LeetCode 207. Course Schedule</h3>
+<h3 id="leetcode-210-course-schedule-ii"><a name="leetcode-210-course-schedule-ii" class="anchor-navigation-ex-anchor" href="#leetcode-210-course-schedule-ii"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.15. LeetCode 210. Course Schedule II</h3>
+<h3 id="leetcode-802-find-eventual-safe-states-medium"><a name="leetcode-802-find-eventual-safe-states-medium" class="anchor-navigation-ex-anchor" href="#leetcode-802-find-eventual-safe-states-medium"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.16. LeetCode 802. Find Eventual Safe States (medium)</h3>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="http://muyids.github.io" target="_blank">&#x6728;&#x6613;&#x4E1C;&#x6C34;</a> 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-03-07 16:38:45
+</span></footer></p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="图.html" class="navigation navigation-prev " aria-label="Previous page: 图论">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="拓扑排序.html" class="navigation navigation-next " aria-label="Next page: 图论">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"图的遍历","level":"1.16.1","depth":2,"next":{"title":"图论","level":"1.16.2","depth":2,"path":"chapter/graph/拓扑排序.md","ref":"./chapter/graph/拓扑排序.md","articles":[]},"previous":{"title":"图论","level":"1.16","depth":1,"path":"chapter/graph/图.md","ref":"./chapter/graph/图.md","articles":[{"title":"图的遍历","level":"1.16.1","depth":2,"path":"chapter/graph/图的遍历.md","ref":"./chapter/graph/图的遍历.md","articles":[]},{"title":"图论","level":"1.16.2","depth":2,"path":"chapter/graph/拓扑排序.md","ref":"./chapter/graph/拓扑排序.md","articles":[]},{"title":"朴素的Dijkstra算法","level":"1.16.3","depth":2,"path":"chapter/graph/朴素的Dijkstra算法.md","ref":"./chapter/graph/朴素的Dijkstra算法.md","articles":[]},{"title":"二分图","level":"1.16.4","depth":2,"path":"chapter/graph/二分图.md","ref":"./chapter/graph/二分图.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon","yahei","github","theme-comscore","-lunr","-search","search-plus","prism","-highlight","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","baidu","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","mygitalk","latex-codecogs"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"latex-codecogs":{"type":"gif"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/muyids"},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"/assets/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"/assets/wechat-pay.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://github.com/muyids"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"4294ba92449f8f0efd09","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["muyids"],"createIssueManually":false,"distractionFreeMode":false,"repo":"simple-algorithm","owner":"muyids","enableHotKey":true,"id":"location.pathname","clientSecret":"07084c963e5d2bd1623ff2392d65e879eece682b","pagerDirection":"last","labels":["Gitalk"]},"baidu":{"token":"168b82023dba250941cd279b9b1123d0"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"木易东水","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"从头开始学算法","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/muyids","个人博客":"http://muyids.com"}},"gitbook":">=3.0.0","description":"本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助"},"file":{"path":"chapter/graph/图的遍历.md","mtime":"2020-03-07T08:38:45.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T09:05:11.169Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
