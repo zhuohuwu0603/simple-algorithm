@@ -1,0 +1,647 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>代码模板 · 从头开始学算法</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="木易东水">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="练习题目.html" />
+    
+    
+    <link rel="prev" href="并查集.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/muyids" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://muyids.com" target="_blank" class="custom-link">个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../二分.html">
+            
+                <a href="../二分.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    二分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../单调栈.html">
+            
+                <a href="../单调栈.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    单调栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../binary-tree/二叉树.html">
+            
+                <a href="../binary-tree/二叉树.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../binary-tree/二叉树的遍历.html">
+            
+                <a href="../binary-tree/二叉树的遍历.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    二叉树的遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../binary-tree/深度优先--前序遍历.html">
+            
+                <a href="../binary-tree/深度优先--前序遍历.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    深度优先--前序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../binary-tree/深度优先--中序遍历.html">
+            
+                <a href="../binary-tree/深度优先--中序遍历.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    深度优先--中序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../binary-tree/深度优先--后序遍历.html">
+            
+                <a href="../binary-tree/深度优先--后序遍历.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    深度优先--后序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../binary-tree/广度优先遍历.html">
+            
+                <a href="../binary-tree/广度优先遍历.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    广度优先遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../binary-tree/二叉搜索树.html">
+            
+                <a href="../binary-tree/二叉搜索树.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../动态规划.html">
+            
+                <a href="../动态规划.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="并查集.html">
+            
+                <a href="并查集.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    并查集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="并查集.html">
+            
+                <a href="并查集.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    并查集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="代码模板.html">
+            
+                <a href="代码模板.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="练习题目.html">
+            
+                <a href="练习题目.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    拓展练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >代码模板</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x6A21;&#x677F;"><b>1.1. </b>&#x4EE3;&#x7801;&#x6A21;&#x677F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x627E;find"><b>1.1.1. </b>&#x67E5;&#x627E;find</a></li><li><span class="title-icon "></span><a href="#&#x5408;&#x5E76;union"><b>1.1.2. </b>&#x5408;&#x5E76;Union</a></li><li><span class="title-icon "></span><a href="#&#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;"><b>1.1.3. </b>&#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><b>1.2. </b>&#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x4EE3;&#x7801;&#x6A21;&#x677F;"><a name="&#x4EE3;&#x7801;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4EE3;&#x7801;&#x6A21;&#x677F;</h2>
+<p>&#x521D;&#x59CB;&#x5316;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span> n <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x67E5;&#x627E;find"><a name="&#x67E5;&#x627E;find" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;find"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x67E5;&#x627E;find</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x5E26;&#x8DEF;&#x5F84;&#x538B;&#x7F29;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x5408;&#x5E76;union"><a name="&#x5408;&#x5E76;union" class="anchor-navigation-ex-anchor" href="#&#x5408;&#x5E76;union"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5408;&#x5E76;Union</h3>
+<blockquote>
+<p>&#x8001;&#x5927;&#x54E5;&#x4E4B;&#x95F4;&#x5408;&#x5E76;&#xFF0C;&#x8DDF;&#x5C0F;&#x5F1F;&#x6CA1;&#x5173;&#x7CFB;</p>
+</blockquote>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">unionA</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;"><a name="&#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x5B8C;&#x6574;&#x7248;&#x4EE3;&#x7801;</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span> <span class="token comment">// &#x6784;&#x9020;</span>
+
+<span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x67E5;&#x8BE2;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> f<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">u</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x5408;&#x5E76;; &#x5F53;find(x) != find(y) &#x624D;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#xFF1B; &#x5982;&#x679C;find(x) == find(y)&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#xFF0C;&#x5DF2;&#x7ECF;&#x5728;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#xFF1B;&#x6B64;&#x65F6;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x8868;&#x660E;&#x5B58;&#x5728;&#x73AF;&#x8DEF;&#xFF1B;</span>
+    f<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">bool</span> <span class="token function">isOneSet</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">find</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">==</span><span class="token function">find</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><a name="&#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5E26;rank&#x7684;&#x8DEF;&#x5F84;&#x538B;&#x7F29;&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;</h2>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">void</span> <span class="token function">makeSet</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">p</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">rank</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>p<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//&#x8DEF;&#x5F84;&#x538B;&#x7F29;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">unionSet</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>p<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>rank<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>rank<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">&lt;</span> rank<span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">=</span> y<span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            p<span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>rank<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> rank<span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span> rank<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="http://muyids.com" target="_blank">&#x6728;&#x6613;&#x4E1C;&#x6C34;</a> 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-03-07 10:25:30
+</span></footer></p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="并查集.html" class="navigation navigation-prev " aria-label="Previous page: 并查集">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="练习题目.html" class="navigation navigation-next " aria-label="Next page: 拓展练习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"代码模板","level":"1.6.2","depth":2,"next":{"title":"拓展练习","level":"1.6.3","depth":2,"path":"chapter/union-find/练习题目.md","ref":"./chapter/union-find/练习题目.md","articles":[]},"previous":{"title":"并查集","level":"1.6.1","depth":2,"path":"chapter/union-find/并查集.md","ref":"./chapter/union-find/并查集.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","yahei","github","autotheme","-lunr","-search","search-plus","prism","-highlight","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","ga","baidu","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","mygitalk","multipart","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='http://muyids.com' target='_blank'>木易东水</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/muyids"},"yahei":{},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"donate":{"alipay":"/assets/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"/assets/wechat-pay.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://github.com/muyids"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"github-buttons":{"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-142790104-1"},"mygitalk":{"flipMoveOptions":{},"clientID":"4294ba92449f8f0efd09","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["muyids"],"createIssueManually":false,"distractionFreeMode":false,"repo":"discuss","owner":"muyids","enableHotKey":true,"clientSecret":"07084c963e5d2bd1623ff2392d65e879eece682b","pagerDirection":"last","labels":["Gitalk"]},"autotheme":{"night":[20,21,22,23,0,1,2,3,4,5],"sepia":[6,7,8,18,19,19],"white":[9,10,11,12,13,14,15,16,17]},"baidu":{"token":"f1f256f18b7899e11647d6ec1f3ded2f"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"木易东水","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"从头开始学算法","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/muyids","个人博客":"http://muyids.com"}},"gitbook":"3.x.x","description":"本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助"},"file":{"path":"chapter/union-find/代码模板.md","mtime":"2020-03-07T02:25:30.579Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T03:53:35.094Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

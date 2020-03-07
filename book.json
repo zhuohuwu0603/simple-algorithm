@@ -119,6 +119,7 @@
             "repo": "simple-algorithm",
             "owner": "muyids",
             "admin": ["muyids"],
+            "id": "location.pathname",
             "distractionFreeMode": false
         }
     },
