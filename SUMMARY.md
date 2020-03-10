@@ -26,7 +26,7 @@
 * [位运算](./chapter/位运算.md)
 * [图论](./chapter/graph/图.md)
   * [图的遍历](./chapter/graph/图的遍历.md)
-  * [图论](./chapter/graph/拓扑排序.md)
+  * [拓扑排序](./chapter/graph/拓扑排序.md)
   * [朴素的Dijkstra算法](./chapter/graph/朴素的Dijkstra算法.md)
   * [二分图](./chapter/graph/二分图.md)
 * [数论](./chapter/math/数论.md)
