@@ -18,6 +18,7 @@
   * [深度优先--后序遍历](./chapter/binary-tree/深度优先--后序遍历.md)
   * [广度优先遍历](./chapter/binary-tree/广度优先遍历.md)
   * [二叉搜索树](./chapter/binary-tree/二叉搜索树.md)
+* [字典树](./chapter/字典树.md)
 * [贪心](./chapter/greedy/贪心.md)
   * [区间问题](./chapter/greedy/区间问题.md)
 * [动态规划](./chapter/dp/动态规划.md)
@@ -32,7 +33,6 @@
   * [数位dp](./chapter/dp/数位dp.md)
   * [状态压缩dp](./chapter/dp/状态压缩dp.md)
 * [并查集](./chapter/并查集.md)
-* [树状数组](./chapter/树状数组.md)
 * [位运算](./chapter/位运算.md)
 * [图论](./chapter/graph/图.md)
   * [图的遍历](./chapter/graph/图的遍历.md)
@@ -42,6 +42,12 @@
 * [数论](./chapter/math/数论.md)
   * [抽屉原理](./chapter/math/抽屉原理.md)
 
+## 进阶
+
+* [离散化](./chapter/离散化.md)
+* [树状数组](./chapter/树状数组.md)
+* [线段树](./chapter/线段树.md)
+* [ST表](./chapter/ST表.md)
 
 
 
