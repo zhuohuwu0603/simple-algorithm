@@ -19,7 +19,7 @@
   * [广度优先遍历](./chapter/binary-tree/广度优先遍历.md)
   * [二叉搜索树](./chapter/binary-tree/二叉搜索树.md)
 * [贪心](./chapter/greedy/贪心.md)
-  * [区间问题](./chapter/greedy/区间调度.md)
+  * [区间问题](./chapter/greedy/区间问题.md)
 * [动态规划](./chapter/动态规划.md)
 * [并查集](./chapter/并查集.md)
 * [树状数组](./chapter/树状数组.md)

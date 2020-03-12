@@ -4,7 +4,7 @@
 
 这本电子书 的 目的就是对上述知识点进行归纳总结，同时会列举一些习题供读者练习，希望通过阅读此书对您能够有所帮助，谢谢！
 
-本书中的力扣题目题解可以参考[力扣题解](https://github.com/muyids/leetcode/tree/master/algorithms)
+本书中的力扣题目题解可以参考[**力扣题解**](https://github.com/muyids/leetcode/tree/master/algorithms)
 
 ## ♨️ 推荐阅读
 
