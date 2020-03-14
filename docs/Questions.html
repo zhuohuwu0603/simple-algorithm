@@ -1,0 +1,1498 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>力扣题解 · 从零开始学算法</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="木易东水">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-latex-codecogs/latex-codecogs.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter/二分.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href='assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/muyids" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://muyids.com" target="_blank" class="custom-link">个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Questions.html">
+            
+                <a href="Questions.html">
+            
+                    
+                    力扣题解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter/二分.html">
+            
+                <a href="chapter/二分.html">
+            
+                    
+                    二分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter/sort/排序.html">
+            
+                <a href="chapter/sort/排序.html">
+            
+                    
+                    排序算法及应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter/sort/快排.html">
+            
+                <a href="chapter/sort/快排.html">
+            
+                    
+                    快速排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter/sort/归并.html">
+            
+                <a href="chapter/sort/归并.html">
+            
+                    
+                    归并排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter/字符串处理.html">
+            
+                <a href="chapter/字符串处理.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter/DFS和回溯.html">
+            
+                <a href="chapter/DFS和回溯.html">
+            
+                    
+                    DFS和回溯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter/单调栈.html">
+            
+                <a href="chapter/单调栈.html">
+            
+                    
+                    单调栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter/滑动窗口.html">
+            
+                <a href="chapter/滑动窗口.html">
+            
+                    
+                    滑动窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter/前缀和.html">
+            
+                <a href="chapter/前缀和.html">
+            
+                    
+                    前缀和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter/链表.html">
+            
+                <a href="chapter/链表.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter/binary-tree/二叉树.html">
+            
+                <a href="chapter/binary-tree/二叉树.html">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="chapter/binary-tree/二叉树的遍历.html">
+            
+                <a href="chapter/binary-tree/二叉树的遍历.html">
+            
+                    
+                    二叉树的遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="chapter/binary-tree/深度优先--前序遍历.html">
+            
+                <a href="chapter/binary-tree/深度优先--前序遍历.html">
+            
+                    
+                    深度优先--前序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="chapter/binary-tree/深度优先--中序遍历.html">
+            
+                <a href="chapter/binary-tree/深度优先--中序遍历.html">
+            
+                    
+                    深度优先--中序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="chapter/binary-tree/深度优先--后序遍历.html">
+            
+                <a href="chapter/binary-tree/深度优先--后序遍历.html">
+            
+                    
+                    深度优先--后序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="chapter/binary-tree/广度优先遍历.html">
+            
+                <a href="chapter/binary-tree/广度优先遍历.html">
+            
+                    
+                    广度优先遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="chapter/binary-tree/二叉搜索树.html">
+            
+                <a href="chapter/binary-tree/二叉搜索树.html">
+            
+                    
+                    二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter/字典树.html">
+            
+                <a href="chapter/字典树.html">
+            
+                    
+                    字典树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter/greedy/贪心.html">
+            
+                <a href="chapter/greedy/贪心.html">
+            
+                    
+                    贪心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="chapter/greedy/区间问题.html">
+            
+                <a href="chapter/greedy/区间问题.html">
+            
+                    
+                    区间问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter/dp/动态规划.html">
+            
+                <a href="chapter/dp/动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="chapter/dp/坐标型动态规划.html">
+            
+                <a href="chapter/dp/坐标型动态规划.html">
+            
+                    
+                    坐标型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="chapter/dp/序列型动态规划.html">
+            
+                <a href="chapter/dp/序列型动态规划.html">
+            
+                    
+                    序列型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="chapter/dp/划分型动态规划.html">
+            
+                <a href="chapter/dp/划分型动态规划.html">
+            
+                    
+                    划分型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="chapter/dp/区间型动态规划.html">
+            
+                <a href="chapter/dp/区间型动态规划.html">
+            
+                    
+                    区间型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="chapter/dp/背包型动态规划.html">
+            
+                <a href="chapter/dp/背包型动态规划.html">
+            
+                    
+                    背包型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="chapter/dp/双序列型动态规划.html">
+            
+                <a href="chapter/dp/双序列型动态规划.html">
+            
+                    
+                    双序列型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="chapter/dp/博弈型动态规划.html">
+            
+                <a href="chapter/dp/博弈型动态规划.html">
+            
+                    
+                    博弈型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="chapter/dp/位操作型动态规划.html">
+            
+                <a href="chapter/dp/位操作型动态规划.html">
+            
+                    
+                    位操作型动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="chapter/dp/数位dp.html">
+            
+                <a href="chapter/dp/数位dp.html">
+            
+                    
+                    数位dp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.10" data-path="chapter/dp/状态压缩dp.html">
+            
+                <a href="chapter/dp/状态压缩dp.html">
+            
+                    
+                    状态压缩dp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="chapter/并查集.html">
+            
+                <a href="chapter/并查集.html">
+            
+                    
+                    并查集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="chapter/位运算.html">
+            
+                <a href="chapter/位运算.html">
+            
+                    
+                    位运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="chapter/graph/图.html">
+            
+                <a href="chapter/graph/图.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="chapter/graph/图的遍历.html">
+            
+                <a href="chapter/graph/图的遍历.html">
+            
+                    
+                    图的遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="chapter/graph/拓扑排序.html">
+            
+                <a href="chapter/graph/拓扑排序.html">
+            
+                    
+                    拓扑排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="chapter/graph/朴素的Dijkstra算法.html">
+            
+                <a href="chapter/graph/朴素的Dijkstra算法.html">
+            
+                    
+                    朴素的Dijkstra算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="chapter/graph/二分图.html">
+            
+                <a href="chapter/graph/二分图.html">
+            
+                    
+                    二分图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="chapter/math/数论.html">
+            
+                <a href="chapter/math/数论.html">
+            
+                    
+                    数论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="chapter/math/抽屉原理.html">
+            
+                <a href="chapter/math/抽屉原理.html">
+            
+                    
+                    抽屉原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter/离散化.html">
+            
+                <a href="chapter/离散化.html">
+            
+                    
+                    离散化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter/树状数组.html">
+            
+                <a href="chapter/树状数组.html">
+            
+                    
+                    树状数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter/线段树.html">
+            
+                <a href="chapter/线段树.html">
+            
+                    
+                    线段树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter/ST表.html">
+            
+                <a href="chapter/ST表.html">
+            
+                    
+                    ST表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="algorithms/1-100/1.two-sum.html">
+            
+                <a href="algorithms/1-100/1.two-sum.html">
+            
+                    
+                    兩數和
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >力扣题解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <ul>
+<li><a href="Questions.html">1-100</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/1.two-sum.md" target="_blank">1.two-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/2.add-two-numbers.md" target="_blank">2.add-two-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/3.longest-substring-without-repeating-characters.md" target="_blank">3.longest-substring-without-repeating-characters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/4.median-of-two-sorted-arrays.md" target="_blank">4.median-of-two-sorted-arrays</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/5.longest-palindromic-substring.md" target="_blank">5.longest-palindromic-substring</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/6.zigzag-conversion.md" target="_blank">6.zigzag-conversion</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/7.reverse-integer.md" target="_blank">7.reverse-integer</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/8.string-to-integer-atoi.md" target="_blank">8.string-to-integer-atoi</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/9.palindrome-number.md" target="_blank">9.palindrome-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/10.regular-expression-matching.md" target="_blank">10.regular-expression-matching</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/11.container-with-most-water.md" target="_blank">11.container-with-most-water</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/12.integer-to-roman.md" target="_blank">12.integer-to-roman</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/13.roman-to-integer.md" target="_blank">13.roman-to-integer</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/14.longest-common-prefix.md" target="_blank">14.longest-common-prefix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/15.3sum.md" target="_blank">15.3sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/16.3sum-closest.md" target="_blank">16.3sum-closest</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/17.letter-combinations-of-a-phone-number.md" target="_blank">17.letter-combinations-of-a-phone-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/18.4sum.md" target="_blank">18.4sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/19.remove-nth-node-from-end-of-list.md" target="_blank">19.remove-nth-node-from-end-of-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/20.valid-parentheses.md" target="_blank">20.valid-parentheses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/21.merge-two-sorted-lists.md" target="_blank">21.merge-two-sorted-lists</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/22.generate-parentheses.md" target="_blank">22.generate-parentheses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/23.merge-k-sorted-lists.md" target="_blank">23.merge-k-sorted-lists</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/24.swap-nodes-in-pairs.md" target="_blank">24.swap-nodes-in-pairs</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/25.reverse-nodes-in-k-group.md" target="_blank">25.reverse-nodes-in-k-group</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/26.remove-duplicates-from-sorted-array.md" target="_blank">26.remove-duplicates-from-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/28.implement-strstr.md" target="_blank">28.implement-strstr</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/29.divide-two-integers.md" target="_blank">29.divide-two-integers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/30.substring-with-concatenation-of-all-words.md" target="_blank">30.substring-with-concatenation-of-all-words</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/31.next-permutation.md" target="_blank">31.next-permutation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/32.longest-valid-parentheses.md" target="_blank">32.longest-valid-parentheses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/33.search-in-rotated-sorted-array.md" target="_blank">33.search-in-rotated-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/34.find-first-and-last-position-of-element-in-sorted-array.md" target="_blank">34.find-first-and-last-position-of-element-in-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/35.search-insert-position.md" target="_blank">35.search-insert-position</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/36.valid-sudoku.md" target="_blank">36.valid-sudoku</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/37.sudoku-solver.md" target="_blank">37.sudoku-solver</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/38.count-and-say.md" target="_blank">38.count-and-say</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/39.combination-sum.md" target="_blank">39.combination-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/40.combination-sum-ii.md" target="_blank">40.combination-sum-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/41.first-missing-positive.md" target="_blank">41.first-missing-positive</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/42.trapping-rain-water.md" target="_blank">42.trapping-rain-water</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/43.multiply-strings.md" target="_blank">43.multiply-strings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/44.wildcard-matching.md" target="_blank">44.wildcard-matching</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/45.jump-game-ii.md" target="_blank">45.jump-game-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/46.permutations.md" target="_blank">46.permutations</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/47.permutations-ii.md" target="_blank">47.permutations-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/48.rotate-image.md" target="_blank">48.rotate-image</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/49.group-anagrams.md" target="_blank">49.group-anagrams</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/51.n-queens.md" target="_blank">51.n-queens</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/52.n-queens-ii.md" target="_blank">52.n-queens-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/53.maximum-subarray.md" target="_blank">53.maximum-subarray</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/54.spiral-matrix.md" target="_blank">54.spiral-matrix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/55.jump-game.md" target="_blank">55.jump-game</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/56.merge-intervals.md" target="_blank">56.merge-intervals</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/57.insert-interval.md" target="_blank">57.insert-interval</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/58.length-of-last-word.md" target="_blank">58.length-of-last-word</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/59.spiral-matrix-ii.md" target="_blank">59.spiral-matrix-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/60.permutation-sequence.md" target="_blank">60.permutation-sequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/61.rotate-list.md" target="_blank">61.rotate-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/62.unique-paths.md" target="_blank">62.unique-paths</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/63.unique-paths-ii.md" target="_blank">63.unique-paths-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/64.minimum-path-sum.md" target="_blank">64.minimum-path-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/66.plus-one.md" target="_blank">66.plus-one</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/69.sqrtx.md" target="_blank">69.sqrtx</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/70.climbing-stairs.md" target="_blank">70.climbing-stairs</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/71.simplify-path.md" target="_blank">71.simplify-path</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/72.edit-distance.md" target="_blank">72.edit-distance</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/74.search-a-2d-matrix.md" target="_blank">74.search-a-2d-matrix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/75.sort-colors.md" target="_blank">75.sort-colors</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/76.minimum-window-substring.md" target="_blank">76.minimum-window-substring</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/77.combinations.md" target="_blank">77.combinations</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/78.subsets.md" target="_blank">78.subsets</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/79.word-search.md" target="_blank">79.word-search</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/80.remove-duplicates-from-sorted-array-ii.md" target="_blank">80.remove-duplicates-from-sorted-array-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/81.search-in-rotated-sorted-array-ii.md" target="_blank">81.search-in-rotated-sorted-array-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/84.largest-rectangle-in-histogram.md" target="_blank">84.largest-rectangle-in-histogram</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/85.maximal-rectangle.md" target="_blank">85.maximal-rectangle</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/86.partition-list.md" target="_blank">86.partition-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/87.scramble-string.md" target="_blank">87.scramble-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/88.merge-sorted-array.md" target="_blank">88.merge-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/89.gray-code.md" target="_blank">89.gray-code</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/90.subsets-ii.md" target="_blank">90.subsets-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/91.decode-ways.md" target="_blank">91.decode-ways</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/92.reverse-linked-list-ii.md" target="_blank">92.reverse-linked-list-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/93.restore-ip-addresses.md" target="_blank">93.restore-ip-addresses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/94.binary-tree-inorder-traversal.md" target="_blank">94.binary-tree-inorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/95.unique-binary-search-trees-ii.md" target="_blank">95.unique-binary-search-trees-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/96.unique-binary-search-trees.md" target="_blank">96.unique-binary-search-trees</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/97.interleaving-string.md" target="_blank">97.interleaving-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/98.validate-binary-search-tree.md" target="_blank">98.validate-binary-search-tree</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">101-200</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/101.symmetric-tree.md" target="_blank">101.symmetric-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/105.construct-binary-tree-from-preorder-and-inorder-traversal.md" target="_blank">105.construct-binary-tree-from-preorder-and-inorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/108.convert-sorted-array-to-binary-search-tree.md" target="_blank">108.convert-sorted-array-to-binary-search-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/109.convert-sorted-list-to-binary-search-tree.md" target="_blank">109.convert-sorted-list-to-binary-search-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/111.minimum-depth-of-binary-tree.md" target="_blank">111.minimum-depth-of-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/115.distinct-subsequences.md" target="_blank">115.distinct-subsequences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/117.populating-next-right-pointers-in-each-node-ii.md" target="_blank">117.populating-next-right-pointers-in-each-node-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/119.pascals-triangle-ii.md" target="_blank">119.pascals-triangle-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/120.triangle.md" target="_blank">120.triangle</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/121.best-time-to-buy-and-sell-stock.md" target="_blank">121.best-time-to-buy-and-sell-stock</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/122.best-time-to-buy-and-sell-stock-ii.md" target="_blank">122.best-time-to-buy-and-sell-stock-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/123.best-time-to-buy-and-sell-stock-iii.md" target="_blank">123.best-time-to-buy-and-sell-stock-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/124.binary-tree-maximum-path-sum.md" target="_blank">124.binary-tree-maximum-path-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/125.valid-palindrome.md" target="_blank">125.valid-palindrome</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/126.word-ladder-ii.md" target="_blank">126.word-ladder-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/127.word-ladder.md" target="_blank">127.word-ladder</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/128.longest-consecutive-sequence.md" target="_blank">128.longest-consecutive-sequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/129.sum-root-to-leaf-numbers.md" target="_blank">129.sum-root-to-leaf-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/130.surrounded-regions.md" target="_blank">130.surrounded-regions</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/131.palindrome-partitioning.md" target="_blank">131.palindrome-partitioning</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/132.palindrome-partitioning-ii.md" target="_blank">132.palindrome-partitioning-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/134.gas-station.md" target="_blank">134.gas-station</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/135.candy.md" target="_blank">135.candy</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/136.single-number.md" target="_blank">136.single-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/137.single-number-ii.md" target="_blank">137.single-number-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/139.word-break.md" target="_blank">139.word-break</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/140.word-break-ii.md" target="_blank">140.word-break-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/141.linked-list-cycle.md" target="_blank">141.linked-list-cycle</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/142.linked-list-cycle-ii.md" target="_blank">142.linked-list-cycle-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/144.binary-tree-preorder-traversal.md" target="_blank">144.binary-tree-preorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/145.binary-tree-postorder-traversal.md" target="_blank">145.binary-tree-postorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/146.lru-cache.md" target="_blank">146.lru-cache</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/147.insertion-sort-list.md" target="_blank">147.insertion-sort-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/148.sort-list.md" target="_blank">148.sort-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/150.evaluate-reverse-polish-notation.md" target="_blank">150.evaluate-reverse-polish-notation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/151.reverse-words-in-a-string.md" target="_blank">151.reverse-words-in-a-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/152.maximum-product-subarray.md" target="_blank">152.maximum-product-subarray</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/153.find-minimum-in-rotated-sorted-array.md" target="_blank">153.find-minimum-in-rotated-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/154.find-minimum-in-rotated-sorted-array-ii.md" target="_blank">154.find-minimum-in-rotated-sorted-array-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/155.min-stack.md" target="_blank">155.min-stack</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/159.longest-substring-with-at-most-two-distinct-characters.md" target="_blank">159.longest-substring-with-at-most-two-distinct-characters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/160.intersection-of-two-linked-lists.md" target="_blank">160.intersection-of-two-linked-lists</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/161.one-edit-distance.md" target="_blank">161.one-edit-distance</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/165.compare-version-numbers.md" target="_blank">165.compare-version-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/166.fraction-to-recurring-decimal.md" target="_blank">166.fraction-to-recurring-decimal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/168.excel-sheet-column-title.md" target="_blank">168.excel-sheet-column-title</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/169.majority-element.md" target="_blank">169.majority-element</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/171.excel-sheet-column-number.md" target="_blank">171.excel-sheet-column-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/172.factorial-trailing-zeroes.md" target="_blank">172.factorial-trailing-zeroes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/173.binary-search-tree-iterator.md" target="_blank">173.binary-search-tree-iterator</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/176.second-highest-salary.md" target="_blank">176.second-highest-salary</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/177.nth-highest-salary.md" target="_blank">177.nth-highest-salary</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/178.rank-scores.md" target="_blank">178.rank-scores</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/179.largest-number.md" target="_blank">179.largest-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/180.consecutive-numbers.md" target="_blank">180.consecutive-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/181.employees-earning-more-than-their-managers.md" target="_blank">181.employees-earning-more-than-their-managers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/186.reverse-words-in-a-string-ii.md" target="_blank">186.reverse-words-in-a-string-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/187.repeated-dna-sequences.md" target="_blank">187.repeated-dna-sequences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/188.best-time-to-buy-and-sell-stock-iv.md" target="_blank">188.best-time-to-buy-and-sell-stock-iv</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/189.rotate-array.md" target="_blank">189.rotate-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/190.reverse-bits.md" target="_blank">190.reverse-bits</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/192.word-frequency.md" target="_blank">192.word-frequency</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/193.valid-phone-numbers.md" target="_blank">193.valid-phone-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/195.tenth-line.md" target="_blank">195.tenth-line</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/196.delete-duplicate-emails.md" target="_blank">196.delete-duplicate-emails</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/197.rising-temperature.md" target="_blank">197.rising-temperature</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/198.house-robber.md" target="_blank">198.house-robber</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/101-200/200.number-of-islands.md" target="_blank">200.number-of-islands</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">201-300</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/201.bitwise-and-of-numbers-range.md" target="_blank">201.bitwise-and-of-numbers-range</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/202.happy-number.md" target="_blank">202.happy-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/203.remove-linked-list-elements.md" target="_blank">203.remove-linked-list-elements</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/204.count-primes.md" target="_blank">204.count-primes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/205.isomorphic-strings.md" target="_blank">205.isomorphic-strings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/206.reverse-linked-list.md" target="_blank">206.reverse-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/207.course-schedule.md" target="_blank">207.course-schedule</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/208.implement-trie-prefix-tree.md" target="_blank">208.implement-trie-prefix-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/209.minimum-size-subarray-sum.md" target="_blank">209.minimum-size-subarray-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/210.course-schedule-ii.md" target="_blank">210.course-schedule-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/211.add-and-search-word-data-structure-design.md" target="_blank">211.add-and-search-word-data-structure-design</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/212.word-search-ii.md" target="_blank">212.word-search-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/213.house-robber-ii.md" target="_blank">213.house-robber-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/214.shortest-palindrome.md" target="_blank">214.shortest-palindrome</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/215.kth-largest-element-in-an-array.md" target="_blank">215.kth-largest-element-in-an-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/216.combination-sum-iii.md" target="_blank">216.combination-sum-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/217.contains-duplicate.md" target="_blank">217.contains-duplicate</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/218.the-skyline-problem.md" target="_blank">218.the-skyline-problem</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/219.contains-duplicate-ii.md" target="_blank">219.contains-duplicate-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/220.contains-duplicate-iii.md" target="_blank">220.contains-duplicate-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/221.maximal-square.md" target="_blank">221.maximal-square</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/222.count-complete-tree-nodes.md" target="_blank">222.count-complete-tree-nodes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/224.basic-calculator.md" target="_blank">224.basic-calculator</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/225.implement-stack-using-queues.md" target="_blank">225.implement-stack-using-queues</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/226.invert-binary-tree.md" target="_blank">226.invert-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/227.basic-calculator-ii.md" target="_blank">227.basic-calculator-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/228.summary-ranges.md" target="_blank">228.summary-ranges</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/229.majority-element-ii.md" target="_blank">229.majority-element-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/230.kth-smallest-element-in-a-bst.md" target="_blank">230.kth-smallest-element-in-a-bst</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/232.implement-queue-using-stacks.md" target="_blank">232.implement-queue-using-stacks</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/234.palindrome-linked-list.md" target="_blank">234.palindrome-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/235.lowest-common-ancestor-of-a-binary-search-tree.md" target="_blank">235.lowest-common-ancestor-of-a-binary-search-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/236.lowest-common-ancestor-of-a-binary-tree.md" target="_blank">236.lowest-common-ancestor-of-a-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/237.delete-node-in-a-linked-list.md" target="_blank">237.delete-node-in-a-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/238.product-of-array-except-self.md" target="_blank">238.product-of-array-except-self</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/239.sliding-window-maximum.md" target="_blank">239.sliding-window-maximum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/240.search-a-2d-matrix-ii.md" target="_blank">240.search-a-2d-matrix-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/242.valid-anagram.md" target="_blank">242.valid-anagram</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/243.shortest-word-distance.md" target="_blank">243.shortest-word-distance</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/244.shortest-word-distance-ii.md" target="_blank">244.shortest-word-distance-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/245.shortest-word-distance-iii.md" target="_blank">245.shortest-word-distance-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/252.meeting-rooms.md" target="_blank">252.meeting-rooms</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/253.meeting-rooms-ii.md" target="_blank">253.meeting-rooms-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/256.paint-house.md" target="_blank">256.paint-house</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/257.binary-tree-paths.md" target="_blank">257.binary-tree-paths</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/258.add-digits.md" target="_blank">258.add-digits</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/260.single-number-iii.md" target="_blank">260.single-number-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/264.ugly-number-ii.md" target="_blank">264.ugly-number-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/265.paint-house-ii.md" target="_blank">265.paint-house-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/266.palindrome-permutation.md" target="_blank">266.palindrome-permutation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/267.palindrome-permutation-ii.md" target="_blank">267.palindrome-permutation-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/268.missing-number.md" target="_blank">268.missing-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/274.h-index.md" target="_blank">274.h-index</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/277.find-the-celebrity.md" target="_blank">277.find-the-celebrity</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/278.first-bad-version.md" target="_blank">278.first-bad-version</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/279.perfect-squares.md" target="_blank">279.perfect-squares</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/280.wiggle-sort.md" target="_blank">280.wiggle-sort</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/283.move-zeroes.md" target="_blank">283.move-zeroes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/286.walls-and-gates.md" target="_blank">286.walls-and-gates</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/287.find-the-duplicate-number.md" target="_blank">287.find-the-duplicate-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/289.game-of-life.md" target="_blank">289.game-of-life</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/292.nim-game.md" target="_blank">292.nim-game</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/295.find-median-from-data-stream.md" target="_blank">295.find-median-from-data-stream</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/297.serialize-and-deserialize-binary-tree.md" target="_blank">297.serialize-and-deserialize-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/299.bulls-and-cows.md" target="_blank">299.bulls-and-cows</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/201-300/300.longest-increasing-subsequence.md" target="_blank">300.longest-increasing-subsequence</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">301-400</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/303.range-sum-query-immutable.md" target="_blank">303.range-sum-query-immutable</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/304.range-sum-query-2d-immutable.md" target="_blank">304.range-sum-query-2d-immutable</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/306.additive-number.md" target="_blank">306.additive-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/307.range-sum-query-mutable.md" target="_blank">307.range-sum-query-mutable</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/309.best-time-to-buy-and-sell-stock-with-cooldown.md" target="_blank">309.best-time-to-buy-and-sell-stock-with-cooldown</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/310.minimum-height-trees.md" target="_blank">310.minimum-height-trees</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/313.super-ugly-number.md" target="_blank">313.super-ugly-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/315.count-of-smaller-numbers-after-self.md" target="_blank">315.count-of-smaller-numbers-after-self</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/316.remove-duplicate-letters.md" target="_blank">316.remove-duplicate-letters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/317.shortest-distance-from-all-buildings.md" target="_blank">317.shortest-distance-from-all-buildings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/322.coin-change.md" target="_blank">322.coin-change</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/325.maximum-size-subarray-sum-equals-k.md" target="_blank">325.maximum-size-subarray-sum-equals-k</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/326.power-of-three.md" target="_blank">326.power-of-three</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/328.odd-even-linked-list.md" target="_blank">328.odd-even-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/329.longest-increasing-path-in-a-matrix.md" target="_blank">329.longest-increasing-path-in-a-matrix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/334.increasing-triplet-subsequence.md" target="_blank">334.increasing-triplet-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/337.house-robber-iii.md" target="_blank">337.house-robber-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/340.longest-substring-with-at-most-k-distinct-characters.md" target="_blank">340.longest-substring-with-at-most-k-distinct-characters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/343.integer-break.md" target="_blank">343.integer-break</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/344.reverse-string.md" target="_blank">344.reverse-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/346.moving-average-from-data-stream.md" target="_blank">346.moving-average-from-data-stream</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/347.top-k-frequent-elements.md" target="_blank">347.top-k-frequent-elements</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/349.intersection-of-two-arrays.md" target="_blank">349.intersection-of-two-arrays</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/350.intersection-of-two-arrays-ii.md" target="_blank">350.intersection-of-two-arrays-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/351.android-unlock-patterns.md" target="_blank">351.android-unlock-patterns</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/354.russian-doll-envelopes.md" target="_blank">354.russian-doll-envelopes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/357.count-numbers-with-unique-digits.md" target="_blank">357.count-numbers-with-unique-digits</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/358.rearrange-string-k-distance-apart.md" target="_blank">358.rearrange-string-k-distance-apart</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/365.water-and-jug-problem.md" target="_blank">365.water-and-jug-problem</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/370.range-addition.md" target="_blank">370.range-addition</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/371.sum-of-two-integers.md" target="_blank">371.sum-of-two-integers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/373.find-k-pairs-with-smallest-sums.md" target="_blank">373.find-k-pairs-with-smallest-sums</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/378.kth-smallest-element-in-a-sorted-matrix.md" target="_blank">378.kth-smallest-element-in-a-sorted-matrix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/380.insert-delete-getrandom-o1.md" target="_blank">380.insert-delete-getrandom-o1</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/382.linked-list-random-node.md" target="_blank">382.linked-list-random-node</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/386.lexicographical-numbers.md" target="_blank">386.lexicographical-numbers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/387.first-unique-character-in-a-string.md" target="_blank">387.first-unique-character-in-a-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/392.is-subsequence.md" target="_blank">392.is-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/394.decode-string.md" target="_blank">394.decode-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/395.longest-substring-with-at-least-k-repeating-characters.md" target="_blank">395.longest-substring-with-at-least-k-repeating-characters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/400.nth-digit.md" target="_blank">400.nth-digit</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">401-500</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/401.binary-watch.md" target="_blank">401.binary-watch</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/402.remove-k-digits.md" target="_blank">402.remove-k-digits</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/403.frog-jump.md" target="_blank">403.frog-jump</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/404.sum-of-left-leaves.md" target="_blank">404.sum-of-left-leaves</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/405.convert-a-number-to-hexadecimal.md" target="_blank">405.convert-a-number-to-hexadecimal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/406.queue-reconstruction-by-height.md" target="_blank">406.queue-reconstruction-by-height</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/407.trapping-rain-water-ii.md" target="_blank">407.trapping-rain-water-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/408.valid-word-abbreviation.md" target="_blank">408.valid-word-abbreviation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/409.longest-palindrome.md" target="_blank">409.longest-palindrome</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/410.split-array-largest-sum.md" target="_blank">410.split-array-largest-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/412.fizz-buzz.md" target="_blank">412.fizz-buzz</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/413.arithmetic-slices.md" target="_blank">413.arithmetic-slices</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/415.add-strings.md" target="_blank">415.add-strings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/416.partition-equal-subset-sum.md" target="_blank">416.partition-equal-subset-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/419.battleships-in-a-board.md" target="_blank">419.battleships-in-a-board</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/424.longest-repeating-character-replacement.md" target="_blank">424.longest-repeating-character-replacement</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/435.non-overlapping-intervals.md" target="_blank">435.non-overlapping-intervals</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/437.path-sum-iii.md" target="_blank">437.path-sum-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/438.find-all-anagrams-in-a-string.md" target="_blank">438.find-all-anagrams-in-a-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/440.k-th-smallest-in-lexicographical-order.md" target="_blank">440.k-th-smallest-in-lexicographical-order</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/441.arranging-coins.md" target="_blank">441.arranging-coins</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/442.find-all-duplicates-in-an-array.md" target="_blank">442.find-all-duplicates-in-an-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/445.add-two-numbers-ii.md" target="_blank">445.add-two-numbers-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/448.find-all-numbers-disappeared-in-an-array.md" target="_blank">448.find-all-numbers-disappeared-in-an-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/451.sort-characters-by-frequency.md" target="_blank">451.sort-characters-by-frequency</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/452.minimum-number-of-arrows-to-burst-balloons.md" target="_blank">452.minimum-number-of-arrows-to-burst-balloons</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/454.4sum-ii.md" target="_blank">454.4sum-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/455.assign-cookies.md" target="_blank">455.assign-cookies</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/460.lfu-cache.md" target="_blank">460.lfu-cache</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/469.convex-polygon.md" target="_blank">469.convex-polygon</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/474.ones-and-zeroes.md" target="_blank">474.ones-and-zeroes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/480.sliding-window-median.md" target="_blank">480.sliding-window-median</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/486.predict-the-winner.md" target="_blank">486.predict-the-winner</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/490.the-maze.md" target="_blank">490.the-maze</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/491.increasing-subsequences.md" target="_blank">491.increasing-subsequences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/494.target-sum.md" target="_blank">494.target-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/496.next-greater-element-i.md" target="_blank">496.next-greater-element-i</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/498.diagonal-traverse.md" target="_blank">498.diagonal-traverse</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">501-600</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/503.next-greater-element-ii.md" target="_blank">503.next-greater-element-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/505.the-maze-ii.md" target="_blank">505.the-maze-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/513.find-bottom-left-tree-value.md" target="_blank">513.find-bottom-left-tree-value</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/516.longest-palindromic-subsequence.md" target="_blank">516.longest-palindromic-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/518.coin-change-2.md" target="_blank">518.coin-change-2</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/521.longest-uncommon-subsequence-i.md" target="_blank">521.longest-uncommon-subsequence-i</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/530.minimum-absolute-difference-in-bst.md" target="_blank">530.minimum-absolute-difference-in-bst</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/538.convert-bst-to-greater-tree.md" target="_blank">538.convert-bst-to-greater-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/540.single-element-in-a-sorted-array.md" target="_blank">540.single-element-in-a-sorted-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/541.reverse-string-ii.md" target="_blank">541.reverse-string-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/543.diameter-of-binary-tree.md" target="_blank">543.diameter-of-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/547.friend-circles.md" target="_blank">547.friend-circles</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/551.student-attendance-record-i.md" target="_blank">551.student-attendance-record-i</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/554.brick-wall.md" target="_blank">554.brick-wall</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/560.subarray-sum-equals-k.md" target="_blank">560.subarray-sum-equals-k</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/562.longest-line-of-consecutive-one-in-matrix.md" target="_blank">562.longest-line-of-consecutive-one-in-matrix</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/572.subtree-of-another-tree.md" target="_blank">572.subtree-of-another-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/581.shortest-unsorted-continuous-subarray.md" target="_blank">581.shortest-unsorted-continuous-subarray</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/589.n-ary-tree-preorder-traversal.md" target="_blank">589.n-ary-tree-preorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/594.longest-harmonious-subsequence.md" target="_blank">594.longest-harmonious-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/501-600/600.non-negative-integers-without-consecutive-ones.md" target="_blank">600.non-negative-integers-without-consecutive-ones</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">601-700</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/621.task-scheduler.md" target="_blank">621.task-scheduler</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/647.palindromic-substrings.md" target="_blank">647.palindromic-substrings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/654.maximum-binary-tree.md" target="_blank">654.maximum-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/673.number-of-longest-increasing-subsequence.md" target="_blank">673.number-of-longest-increasing-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/674.longest-continuous-increasing-subsequence.md" target="_blank">674.longest-continuous-increasing-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/680.valid-palindrome-ii.md" target="_blank">680.valid-palindrome-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/692.top-k-frequent-words.md" target="_blank">692.top-k-frequent-words</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/695.max-area-of-island.md" target="_blank">695.max-area-of-island</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/601-700/698.partition-to-k-equal-sum-subsets.md" target="_blank">698.partition-to-k-equal-sum-subsets</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">701-800</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/714.best-time-to-buy-and-sell-stock-with-transaction-fee.md" target="_blank">714.best-time-to-buy-and-sell-stock-with-transaction-fee</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/725.split-linked-list-in-parts.md" target="_blank">725.split-linked-list-in-parts</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/727.minimum-window-subsequence.md" target="_blank">727.minimum-window-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/733.flood-fill.md" target="_blank">733.flood-fill</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/735.asteroid-collision.md" target="_blank">735.asteroid-collision</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/739.daily-temperatures.md" target="_blank">739.daily-temperatures</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/743.network-delay-time.md" target="_blank">743.network-delay-time</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/746.min-cost-climbing-stairs.md" target="_blank">746.min-cost-climbing-stairs</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/752.open-the-lock.md" target="_blank">752.open-the-lock</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/754.reach-a-number.md" target="_blank">754.reach-a-number</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/763.partition-labels.md" target="_blank">763.partition-labels</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/764.largest-plus-sign.md" target="_blank">764.largest-plus-sign</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/765.couples-holding-hands.md" target="_blank">765.couples-holding-hands</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/768.max-chunks-to-make-sorted-ii.md" target="_blank">768.max-chunks-to-make-sorted-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/769.max-chunks-to-make-sorted.md" target="_blank">769.max-chunks-to-make-sorted</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/778.swim-in-rising-water.md" target="_blank">778.swim-in-rising-water</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/783.minimum-distance-between-bst-nodes.md" target="_blank">783.minimum-distance-between-bst-nodes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/784.letter-case-permutation.md" target="_blank">784.letter-case-permutation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/785.is-graph-bipartite.md" target="_blank">785.is-graph-bipartite</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/791.custom-sort-string.md" target="_blank">791.custom-sort-string</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/792.number-of-matching-subsequences.md" target="_blank">792.number-of-matching-subsequences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/701-800/793.preimage-size-of-factorial-zeroes-function.md" target="_blank">793.preimage-size-of-factorial-zeroes-function</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">801-900</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/802.find-eventual-safe-states.md" target="_blank">802.find-eventual-safe-states</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/803.bricks-falling-when-hit.md" target="_blank">803.bricks-falling-when-hit</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/807.max-increase-to-keep-city-skyline.md" target="_blank">807.max-increase-to-keep-city-skyline</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/814.binary-tree-pruning.md" target="_blank">814.binary-tree-pruning</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/829.consecutive-numbers-sum.md" target="_blank">829.consecutive-numbers-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/832.flipping-an-image.md" target="_blank">832.flipping-an-image</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/835.image-overlap.md" target="_blank">835.image-overlap</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/841.keys-and-rooms.md" target="_blank">841.keys-and-rooms</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/844.backspace-string-compare.md" target="_blank">844.backspace-string-compare</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/845.longest-mountain-in-array.md" target="_blank">845.longest-mountain-in-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/851.loud-and-rich.md" target="_blank">851.loud-and-rich</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/856.score-of-parentheses.md" target="_blank">856.score-of-parentheses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/860.lemonade-change.md" target="_blank">860.lemonade-change</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/862.shortest-subarray-with-sum-at-least-k.md" target="_blank">862.shortest-subarray-with-sum-at-least-k</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/863.all-nodes-distance-k-in-binary-tree.md" target="_blank">863.all-nodes-distance-k-in-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/868.binary-gap.md" target="_blank">868.binary-gap</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/876.middle-of-the-linked-list.md" target="_blank">876.middle-of-the-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/877.stone-game.md" target="_blank">877.stone-game</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/881.boats-to-save-people.md" target="_blank">881.boats-to-save-people</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/885.spiral-matrix-iii.md" target="_blank">885.spiral-matrix-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/886.possible-bipartition.md" target="_blank">886.possible-bipartition</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/889.construct-binary-tree-from-preorder-and-postorder-traversal.md" target="_blank">889.construct-binary-tree-from-preorder-and-postorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/892.surface-area-of-3d-shapes.md" target="_blank">892.surface-area-of-3d-shapes</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">901-1000</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/901.online-stock-span.md" target="_blank">901.online-stock-span</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/907.sum-of-subarray-minimums.md" target="_blank">907.sum-of-subarray-minimums</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/916.word-subsets.md" target="_blank">916.word-subsets</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/917.reverse-only-letters.md" target="_blank">917.reverse-only-letters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/929.unique-email-addresses.md" target="_blank">929.unique-email-addresses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/933.number-of-recent-calls.md" target="_blank">933.number-of-recent-calls</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/934.shortest-bridge.md" target="_blank">934.shortest-bridge</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/938.range-sum-of-bst.md" target="_blank">938.range-sum-of-bst</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/941.valid-mountain-array.md" target="_blank">941.valid-mountain-array</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/946.validate-stack-sequences.md" target="_blank">946.validate-stack-sequences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/951.flip-equivalent-binary-trees.md" target="_blank">951.flip-equivalent-binary-trees</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/958.check-completeness-of-a-binary-tree.md" target="_blank">958.check-completeness-of-a-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/959.regions-cut-by-slashes.md" target="_blank">959.regions-cut-by-slashes</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/962.maximum-width-ramp.md" target="_blank">962.maximum-width-ramp</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/967.numbers-with-same-consecutive-differences.md" target="_blank">967.numbers-with-same-consecutive-differences</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/978.longest-turbulent-subarray.md" target="_blank">978.longest-turbulent-subarray</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/979.distribute-coins-in-binary-tree.md" target="_blank">979.distribute-coins-in-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/980.unique-paths-iii.md" target="_blank">980.unique-paths-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/983.minimum-cost-for-tickets.md" target="_blank">983.minimum-cost-for-tickets</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/984.string-without-aaa-or-bbb.md" target="_blank">984.string-without-aaa-or-bbb</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/989.add-to-array-form-of-integer.md" target="_blank">989.add-to-array-form-of-integer</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/901-1000/1000.minimum-cost-to-merge-stones.md" target="_blank">1000.minimum-cost-to-merge-stones</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">1001-1100</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1004.max-consecutive-ones-iii.md" target="_blank">1004.max-consecutive-ones-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1008.construct-binary-search-tree-from-preorder-traversal.md" target="_blank">1008.construct-binary-search-tree-from-preorder-traversal</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1009.complement-of-base-10-integer.md" target="_blank">1009.complement-of-base-10-integer</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1013.partition-array-into-three-parts-with-equal-sum.md" target="_blank">1013.partition-array-into-three-parts-with-equal-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1019.next-greater-node-in-linked-list.md" target="_blank">1019.next-greater-node-in-linked-list</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1024.video-stitching.md" target="_blank">1024.video-stitching</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1026.maximum-difference-between-node-and-ancestor.md" target="_blank">1026.maximum-difference-between-node-and-ancestor</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1027.longest-arithmetic-sequence.md" target="_blank">1027.longest-arithmetic-sequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1038.binary-search-tree-to-greater-sum-tree.md" target="_blank">1038.binary-search-tree-to-greater-sum-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1046.last-stone-weight.md" target="_blank">1046.last-stone-weight</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1079.letter-tile-possibilities.md" target="_blank">1079.letter-tile-possibilities</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1081.smallest-subsequence-of-distinct-characters.md" target="_blank">1081.smallest-subsequence-of-distinct-characters</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1093.statistics-from-a-large-sample.md" target="_blank">1093.statistics-from-a-large-sample</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1001-1100/1094.car-pooling.md" target="_blank">1094.car-pooling</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">1101-1200</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1003.check-if-word-is-valid-after-substitutions.md" target="_blank">1003.check-if-word-is-valid-after-substitutions</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1014.best-sightseeing-pair.md" target="_blank">1014.best-sightseeing-pair</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1109.corporate-flight-bookings.md" target="_blank">1109.corporate-flight-bookings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1124.longest-well-performing-interval.md" target="_blank">1124.longest-well-performing-interval</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1129.shortest-path-with-alternating-colors.md" target="_blank">1129.shortest-path-with-alternating-colors</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1130.minimum-cost-tree-from-leaf-values.md" target="_blank">1130.minimum-cost-tree-from-leaf-values</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1140.stone-game-ii.md" target="_blank">1140.stone-game-ii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1143.longest-common-subsequence.md" target="_blank">1143.longest-common-subsequence</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1155.number-of-dice-rolls-with-target-sum.md" target="_blank">1155.number-of-dice-rolls-with-target-sum</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1162.as-far-from-land-as-possible.md" target="_blank">1162.as-far-from-land-as-possible</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1163.last-substring-in-lexicographical-order.md" target="_blank">1163.last-substring-in-lexicographical-order</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1169.invalid-transactions.md" target="_blank">1169.invalid-transactions</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1179.reformat-department-table.md" target="_blank">1179.reformat-department-table</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1180.count-substrings-with-only-one-distinct-letter.md" target="_blank">1180.count-substrings-with-only-one-distinct-letter</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1183.maximum-number-of-ones.md" target="_blank">1183.maximum-number-of-ones</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1184.distance-between-bus-stops.md" target="_blank">1184.distance-between-bus-stops</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1185.day-of-the-week.md" target="_blank">1185.day-of-the-week</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1188.design-bounded-blocking-queue.md" target="_blank">1188.design-bounded-blocking-queue</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1189.maximum-number-of-balloons.md" target="_blank">1189.maximum-number-of-balloons</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1101-1200/1190.reverse-substrings-between-each-pair-of-parentheses.md" target="_blank">1190.reverse-substrings-between-each-pair-of-parentheses</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">1201-1300</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1220.count-vowels-permutation.md" target="_blank">1220.count-vowels-permutation</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1221.split-a-string-in-balanced-strings.md" target="_blank">1221.split-a-string-in-balanced-strings</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1222.queens-that-can-attack-the-king.md" target="_blank">1222.queens-that-can-attack-the-king</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1232.check-if-it-is-a-straight-line.md" target="_blank">1232.check-if-it-is-a-straight-line</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1235.maximum-profit-in-job-scheduling.md" target="_blank">1235.maximum-profit-in-job-scheduling</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1240.tiling-a-rectangle-with-the-fewest-squares.md" target="_blank">1240.tiling-a-rectangle-with-the-fewest-squares</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1248.count-number-of-nice-subarrays.md" target="_blank">1248.count-number-of-nice-subarrays</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1249.minimum-remove-to-make-valid-parentheses.md" target="_blank">1249.minimum-remove-to-make-valid-parentheses</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1254.number-of-closed-islands.md" target="_blank">1254.number-of-closed-islands</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1260.shift-2d-grid.md" target="_blank">1260.shift-2d-grid</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1261.find-elements-in-a-contaminated-binary-tree.md" target="_blank">1261.find-elements-in-a-contaminated-binary-tree</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1262.greatest-sum-divisible-by-three.md" target="_blank">1262.greatest-sum-divisible-by-three</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1263.minimum-moves-to-move-a-box-to-their-target-location.md" target="_blank">1263.minimum-moves-to-move-a-box-to-their-target-location</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1266.minimum-time-visiting-all-points.md" target="_blank">1266.minimum-time-visiting-all-points</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1267.count-servers-that-communicate.md" target="_blank">1267.count-servers-that-communicate</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1268.search-suggestions-system.md" target="_blank">1268.search-suggestions-system</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1278.palindrome-partitioning-iii.md" target="_blank">1278.palindrome-partitioning-iii</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1201-1300/1286.iterator-for-combination.md" target="_blank">1286.iterator-for-combination</a></li>
+</ul>
+</li>
+<li><a href="Questions.html">1301-1400</a><ul>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1319.number-of-operations-to-make-network-connected.md" target="_blank">1319.number-of-operations-to-make-network-connected</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1320.minimum-distance-to-type-a-word-using-two-fingers.md" target="_blank">1320.minimum-distance-to-type-a-word-using-two-fingers</a></li>
+<li><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1368.minimum-cost-to-make-at-least-one-valid-path-in-a-grid.md" target="_blank">1368.minimum-cost-to-make-at-least-one-valid-path-in-a-grid</a></li>
+</ul>
+</li>
+</ul>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="http://muyids.github.io" target="_blank">&#x6728;&#x6613;&#x4E1C;&#x6C34;</a> 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-03-14 09:51:10
+</span></footer></p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter/二分.html" class="navigation navigation-next " aria-label="Next page: 二分">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"力扣题解","level":"1.2","depth":1,"next":{"title":"二分","level":"1.3","depth":1,"path":"chapter/二分.md","ref":"./chapter/二分.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","yahei","github","theme-comscore","-lunr","-search","search-plus","prism","-highlight","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","baidu","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","mygitalk","latex-codecogs"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"latex-codecogs":{"type":"gif"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/muyids"},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://muyids.oss-cn-beijing.aliyuncs.com/alipay-smaller.png","alipayText":"支付宝打赏","button":"赏","title":"一分钱也是❤️","wechat":"https://muyids.oss-cn-beijing.aliyuncs.com/wechat-pay.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://github.com/muyids"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"4294ba92449f8f0efd09","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["muyids"],"createIssueManually":false,"distractionFreeMode":false,"repo":"simple-algorithm","owner":"muyids","enableHotKey":true,"id":"location.pathname","clientSecret":"07084c963e5d2bd1623ff2392d65e879eece682b","pagerDirection":"last","labels":["Gitalk"]},"baidu":{"token":"168b82023dba250941cd279b9b1123d0"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"木易东水","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"从零开始学算法","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/muyids","个人博客":"http://muyids.com"}},"gitbook":">=3.0.0","description":"本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助"},"file":{"path":"Questions.md","mtime":"2020-03-14T01:51:10.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-14T01:51:12.219Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

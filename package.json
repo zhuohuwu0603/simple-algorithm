@@ -31,8 +31,8 @@
   "devDependencies": {},
   "scripts": {
     "dev": "gitbook serve",
-    "sync": "cp -rf /Users/dw/go/src/github.com/muyids/leetcode/chapter .",
-    "publish": "npm run sync && gitbook build . docs && git add . && git commit && git push"
+    "sync": "cp -rf /Users/dw/go/src/github.com/muyids/leetcode/algorithms . && cp -rf /Users/dw/go/src/github.com/muyids/leetcode/chapter .",
+    "publish": "npm run sync && node scripts/sync.js && gitbook build . docs && git add . && git commit && git push"
   },
   "repository": {
     "type": "git",
