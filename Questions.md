@@ -358,6 +358,7 @@
   * [783.minimum-distance-between-bst-nodes](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/783.minimum-distance-between-bst-nodes.md)
   * [784.letter-case-permutation](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/784.letter-case-permutation.md)
   * [785.is-graph-bipartite](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/785.is-graph-bipartite.md)
+  * [787](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/787.md)
   * [791.custom-sort-string](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/791.custom-sort-string.md)
   * [792.number-of-matching-subsequences](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/792.number-of-matching-subsequences.md)
   * [793.preimage-size-of-factorial-zeroes-function](https://github.com/muyids/leetcode/blob/master/algorithms/701-800/793.preimage-size-of-factorial-zeroes-function.md)
