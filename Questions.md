@@ -377,6 +377,7 @@
   * [845.longest-mountain-in-array](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/845.longest-mountain-in-array.md)
   * [851.loud-and-rich](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/851.loud-and-rich.md)
   * [856.score-of-parentheses](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/856.score-of-parentheses.md)
+  * [857.minimum-cost-to-hire-k-workers](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/857.minimum-cost-to-hire-k-workers.md)
   * [860.lemonade-change](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/860.lemonade-change.md)
   * [862.shortest-subarray-with-sum-at-least-k](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/862.shortest-subarray-with-sum-at-least-k.md)
   * [863.all-nodes-distance-k-in-binary-tree](https://github.com/muyids/leetcode/blob/master/algorithms/801-900/863.all-nodes-distance-k-in-binary-tree.md)
