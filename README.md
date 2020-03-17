@@ -12,7 +12,7 @@
 
 ## ♨️ 目录
 
-* [力扣题解](./questions.md)
+* [力扣题解](https://github.com/muyids/leetcode/blob/master/questions.md)
 * [二分](./chapter/二分.md)
 * [排序算法及应用](./chapter/sort/排序.md)
   * [快速排序](./chapter/sort/快排.md)
