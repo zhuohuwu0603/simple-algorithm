@@ -19,6 +19,7 @@
   * [归并排序](./chapter/sort/归并.md)
 * [字符串处理](./chapter/字符串处理.md)
 * [DFS和回溯](./chapter/DFS和回溯.md)
+* [BFS和记忆化搜索](./chapter/BFS和记忆化搜索.md)
 * [单调栈](./chapter/单调栈.md)
 * [双指针](./chapter/双指针.md)
 * [滑动窗口](./chapter/滑动窗口.md)
