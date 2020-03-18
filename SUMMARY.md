@@ -51,9 +51,11 @@
   * [最小生成树](./chapter/graph/最小生成树.md)
     * [Prim算法](./chapter/graph/Prim算法.md)
     * [Kruskal算法](./chapter/graph/Kruskal算法.md)
-* [数论](./chapter/math/数论.md)
-  * [抽屉原理](./chapter/math/抽屉原理.md)
-
+* [数学](./chapter/math/数学.md)
+  * [数论](./chapter/math/数论.md)
+    * [抽屉原理](./chapter/math/抽屉原理.md)
+  * [几何问题](./chapter/math/几何问题.md)
+  
 ## 进阶
 
 * [离散化](./chapter/离散化.md)
