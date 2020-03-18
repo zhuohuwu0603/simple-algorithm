@@ -37,6 +37,7 @@
 * [字典树](./chapter/字典树.md)
 * [贪心](./chapter/greedy/贪心.md)
   * [区间问题](./chapter/greedy/区间问题.md)
+  * [子集问题](./chapter/greedy/子集问题.html)
 * [动态规划](./chapter/dp/动态规划.md)
   * [坐标型动态规划](./chapter/dp/坐标型动态规划.md)
   * [序列型动态规划](./chapter/dp/序列型动态规划.md)
@@ -63,8 +64,10 @@
   * [最小生成树](./chapter/graph/最小生成树.md)
     * [Prim算法](./chapter/graph/Prim算法.md)
     * [Kruskal算法](./chapter/graph/Kruskal算法.md)
-* [数论](./chapter/math/数论.md)
-  * [抽屉原理](./chapter/math/抽屉原理.md)
+* [数学](./chapter/math/数学.md)
+  * [数论](./chapter/math/数论.md)
+    * [抽屉原理](./chapter/math/抽屉原理.md)
+  * [几何问题](./chapter/math/几何问题.md)
 
 ## 进阶
 
