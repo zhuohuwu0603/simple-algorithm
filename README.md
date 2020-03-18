@@ -37,7 +37,7 @@
 * [字典树](./chapter/字典树.md)
 * [贪心](./chapter/greedy/贪心.md)
   * [区间问题](./chapter/greedy/区间问题.md)
-  * [子集问题](./chapter/greedy/子集问题.html)
+  * [子集问题](./chapter/greedy/子集问题.md)
 * [动态规划](./chapter/dp/动态规划.md)
   * [坐标型动态规划](./chapter/dp/坐标型动态规划.md)
   * [序列型动态规划](./chapter/dp/序列型动态规划.md)
