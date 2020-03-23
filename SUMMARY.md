@@ -4,8 +4,10 @@
 * [力扣题解](https://github.com/muyids/leetcode/blob/master/questions.md)
 * [二分](./chapter/二分.md)
 * [排序算法及应用](./chapter/sort/排序.md)
+  * [冒泡排序](./chapter/sort/冒泡.md)
   * [快速排序](./chapter/sort/快排.md)
   * [归并排序](./chapter/sort/归并.md)
+  * [桶排序](./chapter/sort/桶排序.md)
 * [字符串处理](./chapter/字符串处理.md)
 * [DFS和回溯](./chapter/DFS和回溯.md)
 * [单调栈](./chapter/单调栈.md)
@@ -63,3 +65,7 @@
 * [树状数组](./chapter/树状数组.md)
 * [线段树](./chapter/线段树.md)
 * [ST表](./chapter/ST表.md)
+
+## 系统设计
+
+* [LRU和LFU](./chapter/system/LRU和LFU.md)

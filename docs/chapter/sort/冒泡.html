@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>贪心 · 从零开始学算法</title>
+        <title>冒泡排序 · 从零开始学算法</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -101,10 +101,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="区间问题.html" />
+    <link rel="next" href="快排.html" />
     
     
-    <link rel="prev" href="../字典树.html" />
+    <link rel="prev" href="排序.html" />
     
 
     <style>
@@ -214,9 +214,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../sort/排序.html">
+        <li class="chapter " data-level="1.4" data-path="排序.html">
             
-                <a href="../sort/排序.html">
+                <a href="排序.html">
             
                     
                     排序算法及应用
@@ -228,9 +228,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../sort/冒泡.html">
+        <li class="chapter active" data-level="1.4.1" data-path="冒泡.html">
             
-                <a href="../sort/冒泡.html">
+                <a href="冒泡.html">
             
                     
                     冒泡排序
@@ -241,9 +241,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../sort/快排.html">
+        <li class="chapter " data-level="1.4.2" data-path="快排.html">
             
-                <a href="../sort/快排.html">
+                <a href="快排.html">
             
                     
                     快速排序
@@ -254,9 +254,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../sort/归并.html">
+        <li class="chapter " data-level="1.4.3" data-path="归并.html">
             
-                <a href="../sort/归并.html">
+                <a href="归并.html">
             
                     
                     归并排序
@@ -267,9 +267,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="../sort/桶排序.html">
+        <li class="chapter " data-level="1.4.4" data-path="桶排序.html">
             
-                <a href="../sort/桶排序.html">
+                <a href="桶排序.html">
             
                     
                     桶排序
@@ -512,9 +512,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.15" data-path="贪心.html">
+        <li class="chapter " data-level="1.15" data-path="../greedy/贪心.html">
             
-                <a href="贪心.html">
+                <a href="../greedy/贪心.html">
             
                     
                     贪心
@@ -526,9 +526,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.1" data-path="区间问题.html">
+        <li class="chapter " data-level="1.15.1" data-path="../greedy/区间问题.html">
             
-                <a href="区间问题.html">
+                <a href="../greedy/区间问题.html">
             
                     
                     区间问题
@@ -539,9 +539,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.2" data-path="子集问题.html">
+        <li class="chapter " data-level="1.15.2" data-path="../greedy/子集问题.html">
             
-                <a href="子集问题.html">
+                <a href="../greedy/子集问题.html">
             
                     
                     子集问题
@@ -1092,7 +1092,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >贪心</a>
+        <a href="../.." >冒泡排序</a>
     </h1>
 </div>
 
@@ -1107,38 +1107,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8D2A;&#x5FC3;"><b>1. </b>&#x8D2A;&#x5FC3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6982;&#x5FF5;&#x9898;"><b>1.1. </b>&#x6982;&#x5FF5;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x95EE;&#x9898;"><b>1.2. </b>&#x5E38;&#x89C1;&#x95EE;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x533A;&#x95F4;&#x95EE;&#x9898;"><b>1.2.1. </b>&#x533A;&#x95F4;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x8DF3;&#x8DC3;&#x6E38;&#x620F;"><b>1.2.2. </b>&#x8DF3;&#x8DC3;&#x6E38;&#x620F;</a></li><li><span class="title-icon "></span><a href="#&#x5176;&#x4ED6;&#x95EE;&#x9898;"><b>1.2.3. </b>&#x5176;&#x4ED6;&#x95EE;&#x9898;</a></li></ul></ul></ul></div><a href="#&#x8D2A;&#x5FC3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8D2A;&#x5FC3;"><a name="&#x8D2A;&#x5FC3;" class="anchor-navigation-ex-anchor" href="#&#x8D2A;&#x5FC3;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8D2A;&#x5FC3;</h1>
-<p>&#x6BCF;&#x6B21;&#x90FD;&#x6C42;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x4EE5;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x5F97;&#x5230;&#x5168;&#x5C40;&#x6700;&#x4F18;</p>
-<p>&#x8D2A;&#x5FC3;&#x662F;<strong>&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7C7B;&#x578B;</strong>&#x7684;&#x9898;&#x76EE;</p>
-<h2 id="&#x6982;&#x5FF5;&#x9898;"><a name="&#x6982;&#x5FF5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x5FF5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6982;&#x5FF5;&#x9898;</h2>
-<p>&#x627E;&#x96F6;&#x94B1;&#xFF1A;&#x6709;1&#xFF0C;2&#xFF0C;5&#x4E09;&#x79CD;&#x9762;&#x503C;&#x7684;&#x949E;&#x7968;&#xFF0C;&#x6BCF;&#x4EF6;&#x5546;&#x54C1;&#x552E;&#x4EF7;3&#x5143;&#xFF0C;&#x8F93;&#x5165;&#x987E;&#x5BA2;&#x4ED8;&#x6B3E;&#x7684;&#x949E;&#x7968;&#x9762;&#x989D;&#x987A;&#x5E8F;&#xFF0C;&#x95EE;&#x80FD;&#x5426;&#x627E;&#x96F6;&#xFF1F;</p>
-<p>&#x7B97;&#x6CD5;&#x601D;&#x8DEF;&#xFF1A;&#x4F18;&#x5148;&#x627E;&#x8F83;&#x5927;&#x9762;&#x503C;&#x7684;&#x94B1;</p>
-<p>&#x9898;&#x76EE;&#x6765;&#x6E90;&#xFF1A;<a href="https://github.com/muyids/leetcode/blob/master/algorithms/801-900/860.lemonade-change.md" target="_blank">LeetCode 860. Lemonade Change (easy)</a></p>
-<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;"><a name="&#x5E38;&#x89C1;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
-<h3 id="&#x533A;&#x95F4;&#x95EE;&#x9898;"><a name="&#x533A;&#x95F4;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x533A;&#x95F4;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x533A;&#x95F4;&#x95EE;&#x9898;</h3>
-<p><a href="&#x533A;&#x95F4;&#x95EE;&#x9898;.html">&#x533A;&#x95F4;&#x95EE;&#x9898;</a></p>
-<h3 id="&#x8DF3;&#x8DC3;&#x6E38;&#x620F;"><a name="&#x8DF3;&#x8DC3;&#x6E38;&#x620F;" class="anchor-navigation-ex-anchor" href="#&#x8DF3;&#x8DC3;&#x6E38;&#x620F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x8DF3;&#x8DC3;&#x6E38;&#x620F;</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5192;&#x6CE1;&#x6392;&#x5E8F;"><b>1. </b>&#x5192;&#x6CE1;&#x6392;&#x5E8F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B97;&#x6CD5;&#x601D;&#x8DEF;"><b>1.1. </b>&#x7B97;&#x6CD5;&#x601D;&#x8DEF;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><b>1.2. </b>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</a></li></ul></ul></div><a href="#&#x5192;&#x6CE1;&#x6392;&#x5E8F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5192;&#x6CE1;&#x6392;&#x5E8F;"><a name="&#x5192;&#x6CE1;&#x6392;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#&#x5192;&#x6CE1;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5192;&#x6CE1;&#x6392;&#x5E8F;</h1>
+<h2 id="&#x7B97;&#x6CD5;&#x601D;&#x8DEF;"><a name="&#x7B97;&#x6CD5;&#x601D;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#x7B97;&#x6CD5;&#x601D;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B97;&#x6CD5;&#x601D;&#x8DEF;</h2>
 <ul>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/55.jump-game.md" target="_blank">LeetCode 55. Jump Game (medium)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1-100/45.jump-game-ii.md" target="_blank">LeetCode 45. Jump Game II (hard)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1306.jump-game-iii.md" target="_blank">LeetCode 1306. Jump Game III (medium)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1345.jump-game-iv.md" target="_blank">LeetCode 1345. Jump Game IV (hard)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/1301-1400/1340.jump-game-v.md" target="_blank">LeetCode 1340. Jump Game V (hard)</a></p>
+<li>&#x8FDB;&#x884C;<code>len-1</code>&#x6B21;&#x5192;&#x6CE1;<ul>
+<li>&#x7B2C;k&#x6B21;&#x5192;&#x6CE1;&#x5C06;&#x5012;&#x6570;&#x7B2C;k&#x4E2A;&#x5143;&#x7D20;&#x6392;&#x597D;&#x5E8F;</li>
+</ul>
 </li>
 </ul>
-<h3 id="&#x5176;&#x4ED6;&#x95EE;&#x9898;"><a name="&#x5176;&#x4ED6;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x5176;&#x4ED6;&#x95EE;&#x9898;</h3>
-<ul>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/401-500/455.assign-cookies.md" target="_blank">LeetCode 455. Assign Cookies (easy)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/392.is-subsequence.md" target="_blank">LeetCode 392. Is Subsequence (easy)</a></p>
-</li>
-<li><p><a href="https://github.com/muyids/leetcode/blob/master/algorithms/301-400/376.wiggle-subsequence.md" target="_blank">LeetCode 376. Wiggle Subsequence (medium)</a></p>
-</li>
-</ul>
+<h2 id="&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><a name="&#x4EE3;&#x7801;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h2>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">function</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// len - 1&#x6B21;&#x5192;&#x6CE1;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x4F9D;&#x6B21;&#x6BD4;&#x8F83;&#x76F8;&#x90BB;&#x5143;&#x7D20;&#xFF0C;&#x8FDB;&#x884C;&#x5192;&#x6CE1;&#xFF0C;&#x6BD4;&#x8F83;&#x533A;&#x95F4;[0,len - 1 - i]</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&gt;</span> nums<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> tmp <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+                nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+                nums<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> tmp
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> nums
+<span class="token punctuation">}</span>
+</code></pre>
 <p><footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="http://muyids.github.io" target="_blank">&#x6728;&#x6613;&#x4E1C;&#x6C34;</a> 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2020-03-23 22:58:28
 </span></footer></p>
@@ -1169,12 +1159,12 @@
 
             
                 
-                <a href="../字典树.html" class="navigation navigation-prev " aria-label="Previous page: 字典树">
+                <a href="排序.html" class="navigation navigation-prev " aria-label="Previous page: 排序算法及应用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="区间问题.html" class="navigation navigation-next " aria-label="Next page: 区间问题">
+                <a href="快排.html" class="navigation navigation-next " aria-label="Next page: 快速排序">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1185,7 +1175,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"贪心","level":"1.15","depth":1,"next":{"title":"区间问题","level":"1.15.1","depth":2,"path":"chapter/greedy/区间问题.md","ref":"./chapter/greedy/区间问题.md","articles":[]},"previous":{"title":"字典树","level":"1.14","depth":1,"path":"chapter/字典树.md","ref":"./chapter/字典树.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","yahei","github","theme-comscore","-lunr","-search","search-plus","prism","-highlight","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","baidu","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","mygitalk","latex-codecogs"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"latex-codecogs":{"type":"gif"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/muyids"},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://muyids.oss-cn-beijing.aliyuncs.com/alipay-smaller.png","alipayText":"支付宝打赏","button":"赏","title":"一分钱也是❤️","wechat":"https://muyids.oss-cn-beijing.aliyuncs.com/wechat-pay.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://github.com/muyids"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"4294ba92449f8f0efd09","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["muyids"],"createIssueManually":false,"distractionFreeMode":false,"repo":"simple-algorithm","owner":"muyids","enableHotKey":true,"id":"location.pathname","clientSecret":"07084c963e5d2bd1623ff2392d65e879eece682b","pagerDirection":"last","labels":["Gitalk"]},"baidu":{"token":"168b82023dba250941cd279b9b1123d0"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"木易东水","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"从零开始学算法","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/muyids","个人博客":"http://muyids.com"}},"gitbook":">=3.0.0","description":"本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助"},"file":{"path":"chapter/greedy/贪心.md","mtime":"2020-03-23T14:58:28.160Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-23T14:58:30.850Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"冒泡排序","level":"1.4.1","depth":2,"next":{"title":"快速排序","level":"1.4.2","depth":2,"path":"chapter/sort/快排.md","ref":"./chapter/sort/快排.md","articles":[]},"previous":{"title":"排序算法及应用","level":"1.4","depth":1,"path":"chapter/sort/排序.md","ref":"./chapter/sort/排序.md","articles":[{"title":"冒泡排序","level":"1.4.1","depth":2,"path":"chapter/sort/冒泡.md","ref":"./chapter/sort/冒泡.md","articles":[]},{"title":"快速排序","level":"1.4.2","depth":2,"path":"chapter/sort/快排.md","ref":"./chapter/sort/快排.md","articles":[]},{"title":"归并排序","level":"1.4.3","depth":2,"path":"chapter/sort/归并.md","ref":"./chapter/sort/归并.md","articles":[]},{"title":"桶排序","level":"1.4.4","depth":2,"path":"chapter/sort/桶排序.md","ref":"./chapter/sort/桶排序.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon","yahei","github","theme-comscore","-lunr","-search","search-plus","prism","-highlight","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","baidu","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","mygitalk","latex-codecogs"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"latex-codecogs":{"type":"gif"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/muyids"},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://muyids.oss-cn-beijing.aliyuncs.com/alipay-smaller.png","alipayText":"支付宝打赏","button":"赏","title":"一分钱也是❤️","wechat":"https://muyids.oss-cn-beijing.aliyuncs.com/wechat-pay.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://github.com/muyids"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"muyids","repo":"leetcode","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"4294ba92449f8f0efd09","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["muyids"],"createIssueManually":false,"distractionFreeMode":false,"repo":"simple-algorithm","owner":"muyids","enableHotKey":true,"id":"location.pathname","clientSecret":"07084c963e5d2bd1623ff2392d65e879eece682b","pagerDirection":"last","labels":["Gitalk"]},"baidu":{"token":"168b82023dba250941cd279b9b1123d0"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"木易东水","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"从零开始学算法","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/muyids","个人博客":"http://muyids.com"}},"gitbook":">=3.0.0","description":"本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助"},"file":{"path":"chapter/sort/冒泡.md","mtime":"2020-03-23T14:58:28.126Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-23T14:58:30.850Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
