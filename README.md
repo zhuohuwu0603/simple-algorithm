@@ -79,3 +79,7 @@
 * [树状数组](./chapter/树状数组.md)
 * [线段树](./chapter/线段树.md)
 * [ST表](./chapter/ST表.md)
+
+## 推荐学习
+
+* [OI Wiki](https://oi-wiki.org/)
