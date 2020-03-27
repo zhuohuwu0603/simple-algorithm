@@ -69,6 +69,7 @@
 * [数学](./chapter/math/数学.md)
   * [数论](./chapter/math/数论.md)
     * [抽屉原理](./chapter/math/抽屉原理.md)
+    * [约瑟夫环](./chapter/math/约瑟夫环.md)
   * [几何问题](./chapter/math/几何问题.md)
 
 ## 进阶
