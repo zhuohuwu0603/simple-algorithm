@@ -59,7 +59,7 @@
     * [抽屉原理](./chapter/math/抽屉原理.md)
     * [约瑟夫环](./chapter/math/约瑟夫环.md)
     * [卡特兰数](./chapter/math/卡特兰数.md)
-  * [几何问题](./chapter/math/几何问题.md)
+  * [计算几何](./chapter/math/几何问题.md)
   
 ## 进阶
 
@@ -71,3 +71,7 @@
 ## 系统设计
 
 * [LRU和LFU](./chapter/system/LRU和LFU.md)
+
+## 拓展学习
+
+* [OI Wiki](https://oi-wiki.org/)
