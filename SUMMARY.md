@@ -55,13 +55,13 @@
     * [Prim算法](./chapter/graph/Prim算法.md)
     * [Kruskal算法](./chapter/graph/Kruskal算法.md)
 * [数学](./chapter/math/数学.md)
-  * [数论](./chapter/math/数论.md)
+  * [初等数论](./chapter/math/初等数论.md)
     * [容斥原理](./chapter/math/容斥原理.md)
     * [抽屉原理](./chapter/math/抽屉原理.md)
     * [约瑟夫环](./chapter/math/约瑟夫环.md)
     * [卡特兰数](./chapter/math/卡特兰数.md)
     * [概率论--三门问题](./chapter/math/三门问题.md)
-  * [计算几何](./chapter/math/几何问题.md)
+  * [计算几何](./chapter/math/计算几何.md)
   
 ## 进阶
 
