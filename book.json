@@ -1,145 +1,172 @@
 {
-    "gitbook": ">=3.0.0",
-    "plugins": [
-        "favicon", "yahei", "github", "theme-comscore", "-lunr", "-search",
-        "search-plus", "prism", "-highlight", "github-buttons", "splitter",
-        "-sharing", "sharing-plus", "tbfed-pagefooter", "expandable-chapters-small",
-        "book-summary-scroll-position-saver", "baidu", "donate",
-        "anchors", "anchor-navigation-ex", "sitemap-general",
-        "copy-code-button", "mygitalk", "latex-codecogs"
-    ],
-    "pluginsConfig": {
-        "theme-default": {
-            "showLevel": false
-        },
-        "fontSettings": {
-            "family": "serif",
-            "size": 2
-        },
-        "github": {
-            "url": "https://github.com/muyids"
-        },
-        "prism": {
-            "css": [
-                "prismjs/themes/prism-tomorrow.css"
-            ]
-        },
-        "github-buttons": {
-            "buttons": [{
-                "user": "muyids",
-                "repo": "leetcode",
-                "type": "star",
-                "size": "small",
-                "count": true
-            }]
-        },
-        "sharing": {
-            "douban": false,
-            "facebook": false,
-            "google": true,
-            "hatenaBookmark": false,
-            "instapaper": false,
-            "line": true,
-            "linkedin": true,
-            "messenger": false,
-            "pocket": false,
-            "qq": false,
-            "qzone": true,
-            "stumbleupon": false,
-            "twitter": false,
-            "viber": false,
-            "vk": false,
-            "weibo": true,
-            "whatsapp": false,
-            "all": [
-                "facebook", "google", "twitter",
-                "weibo", "instapaper", "linkedin",
-                "pocket", "stumbleupon"
-            ]
-        },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020",
-            "modify_label": "修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "baidu": {
-            "token": "168b82023dba250941cd279b9b1123d0"
-        },
-        "donate": {
-            "wechat": "https://muyids.oss-cn-beijing.aliyuncs.com/wechat-pay.png",
-            "alipay": "https://muyids.oss-cn-beijing.aliyuncs.com/alipay-smaller.png",
-            "title": "一分钱也是❤️",
-            "button": "赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
-        },
-        "anchor-navigation-ex": {
-            "showLevel": true,
-            "associatedWithSummary": false,
-            "printLog": false,
-            "multipleH1": true,
-            "mode": "float",
-            "showGoTop": true,
-            "float": {
-                "floatIcon": "fa fa-navicon",
-                "showLevelIcon": false,
-                "level1Icon": "fa fa-hand-o-right",
-                "level2Icon": "fa fa-hand-o-right",
-                "level3Icon": "fa fa-hand-o-right"
-            },
-            "pageTop": {
-                "showLevelIcon": false,
-                "level1Icon": "fa fa-hand-o-right",
-                "level2Icon": "fa fa-hand-o-right",
-                "level3Icon": "fa fa-hand-o-right"
-            }
-        },
-        "sitemap-general": {
-            "prefix": "https://github.com/muyids"
-        },
-        "favicon": {
-            "shortcut": "/assets/images/favicon.ico",
-            "bookmark": "/assets/images/favicon.ico",
-            "appleTouch": "/assets/images/apple-touch-icon.png",
-            "appleTouchMore": {
-                "120x120": "/assets/images/apple-touch-icon-120x120.png",
-                "180x180": "/assets/images/apple-touch-icon-180x180.png"
-            }
-        },
-        "mygitalk": {
-            "clientID": "4294ba92449f8f0efd09",
-            "clientSecret": "07084c963e5d2bd1623ff2392d65e879eece682b",
-            "repo": "simple-algorithm",
-            "owner": "muyids",
-            "admin": ["muyids"],
-            "id": "location.pathname",
-            "distractionFreeMode": false
-        }
+  "gitbook": ">=3.0.0",
+  "plugins": [
+    "favicon",
+    "yahei",
+    "github",
+    "theme-comscore",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "prism",
+    "-highlight",
+    "github-buttons",
+    "splitter",
+    "-sharing",
+    "sharing-plus",
+    "tbfed-pagefooter",
+    "expandable-chapters-small",
+    "book-summary-scroll-position-saver",
+    "baidu",
+    "donate",
+    "anchors",
+    "anchor-navigation-ex",
+    "sitemap-general",
+    "copy-code-button",
+    "mygitalk",
+    "latex-codecogs"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": false
     },
-    "pdf": {
-        "pageNumbers": true,
-        "fontFamily": "Arial",
-        "fontSize": 12,
-        "paperSize": "a4",
-        "margin": {
-            "right": 62,
-            "left": 62,
-            "top": 56,
-            "bottom": 56
-        }
+    "fontSettings": {
+      "family": "serif",
+      "size": 2
     },
-    "title": "从零开始学算法",
-    "description": "本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助",
-    "author": "木易东水",
-    "language": "zh-hans",
-    "root": ".",
-    "structure": {
-        "readme": "README.md"
+    "github": {
+      "url": "https://github.com/muyids"
     },
-    "links": {
-        "sidebar": {
-            "GitHub": "https://github.com/muyids",
-            "个人博客": "http://muyids.com"
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    },
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "muyids",
+          "repo": "leetcode",
+          "type": "star",
+          "size": "small",
+          "count": true
         }
+      ]
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": true,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": true,
+      "linkedin": true,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": true,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "facebook",
+        "google",
+        "twitter",
+        "weibo",
+        "instapaper",
+        "linkedin",
+        "pocket",
+        "stumbleupon"
+      ]
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy <a href='http://muyids.github.io' target='_blank'>木易东水</a> 2020",
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "baidu": {
+      "token": "168b82023dba250941cd279b9b1123d0"
+    },
+    "donate": {
+      "wechat": "https://muyids.oss-cn-beijing.aliyuncs.com/wechat-pay.png",
+      "alipay": "https://muyids.oss-cn-beijing.aliyuncs.com/alipay-smaller.png",
+      "title": "一分钱也是❤️",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": true,
+      "associatedWithSummary": false,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
+    "sitemap-general": {
+      "prefix": "https://github.com/muyids"
+    },
+    "favicon": {
+      "shortcut": "/assets/images/favicon.ico",
+      "bookmark": "/assets/images/favicon.ico",
+      "appleTouch": "/assets/images/apple-touch-icon.png",
+      "appleTouchMore": {
+        "120x120": "/assets/images/apple-touch-icon-120x120.png",
+        "180x180": "/assets/images/apple-touch-icon-180x180.png"
+      }
+    },
+    "mygitalk": {
+      "clientID": "4294ba92449f8f0efd09",
+      "clientSecret": "07084c963e5d2bd1623ff2392d65e879eece682b",
+      "repo": "simple-algorithm",
+      "owner": "muyids",
+      "admin": [
+        "muyids"
+      ],
+      "id": "location.pathname",
+      "distractionFreeMode": false
     }
+  },
+  "pdf": {
+    "pageNumbers": true,
+    "fontFamily": "Arial",
+    "fontSize": 12,
+    "paperSize": "a4",
+    "margin": {
+      "right": 62,
+      "left": 62,
+      "top": 56,
+      "bottom": 56
+    }
+  },
+  "title": "从零开始学算法",
+  "description": "本书是个人从头开始学算法过程中对各个知识点的归纳整理，希望阅读后对您有所帮助",
+  "author": "木易东水",
+  "language": "zh-hans",
+  "root": ".",
+  "structure": {
+    "readme": "README.md"
+  },
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/muyids",
+      "个人博客": "http://muyids.com"
+    }
+  }
 }
