@@ -19,9 +19,10 @@ echo "push to host..."
 
 cd ..
 
-rsync --progress --delete -e "ssh -p 27810" \
+rsync -e "ssh -p 27810" \
     --include "${PROJECT}/docs/" \
     --exclude "${PROJECT}/*" \
     -aur ${PROJECT} root@144.34.218.151:/opt
 
 echo "done"
+
