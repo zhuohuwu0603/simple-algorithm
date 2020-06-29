@@ -18,7 +18,7 @@
 
 ## ♨️ 导图
 
-<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:525px; height:245px;" src="https://www.processon.com/embed/5ef97d186376891e81ec8bb8"></iframe>
+![simple-algorithm](https://muyids.oss-cn-beijing.aliyuncs.com/simple-algorithm.png)
 
 ## 推荐学习
 
