@@ -24,5 +24,14 @@ rsync -e "ssh -p 27810" \
     --exclude "${PROJECT}/*" \
     -aur ${PROJECT} root@144.34.218.151:/opt
 
+
+echo "push to host..."
+
+rsync -e "ssh -p 22" \
+    --include "${PROJECT}/docs/" \
+    --exclude "${PROJECT}/*" \
+    -aur ${PROJECT} root@129.0.4.32:/app/waiyanai
+
+
 echo "done"
 
